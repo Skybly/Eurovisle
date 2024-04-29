@@ -1,3 +1,5 @@
+import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
+
 export default function Guess({ guess }) {
     const {
         Film_title: guessTitle,
@@ -39,6 +41,8 @@ export default function Guess({ guess }) {
     const countryCorrect = guessCountry === correctCountries;
     const languageCorrect = guessLanguage === correctLanguage;
     const yearDiff = Math.abs(guessYear - correctYear);
+    const guessedYearHigher =
+        guessYear !== correctYear ? guessYear > correctYear : null;
     const yearRequired =
         guessYear > correctYear
             ? yearDiff <= 5
@@ -51,6 +55,8 @@ export default function Guess({ guess }) {
             : "#418243";
 
     const ratingDiff = Math.abs(guessRating - correctRating);
+    const guessedRatingHigher =
+        guessRating !== correctRating ? guessRating > correctRating : null;
     const ratingRequired =
         guessRating > correctRating
             ? ratingDiff <= 0.5
@@ -62,76 +68,123 @@ export default function Guess({ guess }) {
                 : "#29282B"
             : "#418243";
 
-    console.log(yearRequired);
-
     return (
-        <div className="flex flex-col gap-y-1">
-            <div className="text-2xl text-primary-text">{guessTitle}</div>
-            <div style={{ color: "white", display: "flex", columnGap: "5px" }}>
+        <div className="flex flex-col gap-y-1 items-center w-72">
+            <div className="text-3xl text-primary-text font-montserrat text-center font-bold">
+                {guessTitle}
+            </div>
+            <div className="text-primary-innertext flex w-full justify-center gap-x-2">
                 <div
+                    className="p-2 rounded-sm w-28"
                     style={{
                         background: yearRequired,
                     }}
                 >
-                    <div>Year</div>
-                    <div>{guessYear}</div>
+                    <div className="text-lg font-montserrat font-semibold text-center">
+                        Year
+                    </div>
+                    <div className="text-xl font-poppins font-semibold text-center flex items-center justify-center gap-x-1">
+                        {guessYear}
+                        {guessedYearHigher !== null &&
+                            (guessedYearHigher ? (
+                                <ArrowDownOutlined />
+                            ) : (
+                                <ArrowUpOutlined />
+                            ))}
+                    </div>
                 </div>
                 <div
+                    className="p-2 rounded-sm w-28"
                     style={{
                         background: ratingRequired,
                     }}
                 >
-                    <div>Rating</div>
-                    <div>{guessRating}</div>
+                    <div className="text-lg font-montserrat font-semibold text-center">
+                        Rating
+                    </div>
+                    <div className="text-xl font-poppins font-semibold text-center flex items-center justify-center gap-x-1">
+                        {guessRating}
+                        {guessedRatingHigher !== null &&
+                            (guessedRatingHigher ? (
+                                <ArrowDownOutlined />
+                            ) : (
+                                <ArrowUpOutlined />
+                            ))}
+                    </div>
                 </div>
             </div>
-            <div className="flex gap-x-1">
+            <div className="flex text-primary-innertext justify-center gap-x-2">
                 <div
+                    className="p-2 rounded-sm w-28"
                     style={{
                         background: genreCorrect ? "#418243" : "#29282B",
                     }}
                 >
-                    <div>Genre</div>
-                    <div>{guessGenre}</div>
+                    <div className="text-lg font-montserrat font-semibold text-center">
+                        Genre
+                    </div>
+                    <div className="text-xl font-poppins font-semibold text-center">
+                        {guessGenre}
+                    </div>
                 </div>
                 <div
+                    className="p-2 rounded-sm w-28"
                     style={{
                         background: languageCorrect ? "#418243" : "#29282B",
                     }}
                 >
-                    <div>Language</div>
-                    <div>{guessLanguage}</div>
+                    <div className="text-lg font-montserrat font-semibold text-center">
+                        Language
+                    </div>
+                    <div className="text-xl font-poppins font-semibold text-center">
+                        {guessLanguage}
+                    </div>
                 </div>
             </div>
 
-            <div className="flex gap-x-1">
+            <div className="flex gap-x-1 text-primary-innertext">
                 <div
+                    className="p-2 rounded-sm min-w-32"
                     style={{
                         background: countryCorrect ? "#418243" : "#29282B",
                     }}
                 >
-                    <div>Country</div>
-                    <div>{guessCountry}</div>
+                    <div className="text-lg font-montserrat font-semibold text-center">
+                        Country
+                    </div>
+                    <div className="text-xl font-poppins font-semibold text-center">
+                        {guessCountry}
+                    </div>
                 </div>
             </div>
-            <div className="flex gap-x-1">
+            <div className="flex gap-x-1 text-primary-innertext">
                 <div
+                    className="p-2 rounded-sm min-w-32"
                     style={{
                         background: directorCorrect ? "#418243" : "#29282B",
                     }}
                 >
-                    <div>Director</div>
-                    <div>{guessDirector}</div>
+                    <div className="text-lg font-montserrat font-semibold text-center">
+                        Director
+                    </div>
+                    <div className="text-xl font-poppins font-semibold text-center">
+                        {guessDirector}
+                    </div>
                 </div>
             </div>
-            <div className="flex gap-x-1">
+            <div className="flex gap-x-1 text-primary-innertext">
                 <div
+                    className="p-2 rounded-sm min-w-32"
                     style={{
                         background: castCorrect ? "#418243" : "#29282B",
                     }}
                 >
-                    <div>Lead</div>
-                    <div>{guessCast}</div>
+                    <div className="text-lg font-montserrat font-semibold text-center">
+                        Lead
+                    </div>
+                    <div className="text-xl font-poppins font-semibold text-center">
+                        {guessCast}
+                    </div>
                 </div>
             </div>
         </div>
