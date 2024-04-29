@@ -1,15 +1,7 @@
 import { useState } from "react";
 import Guess from "../components/Guess";
-import { AutoComplete } from "antd";
-
-const options = [
-    { value: "Jack" },
-    { value: "Lucy" },
-    { value: "Tom" },
-    { value: "Barbie" },
-    { value: "Greta" },
-];
-
+import { AutoComplete, message } from "antd";
+import films from "../data/movies.json";
 
 const filterOption = (input, option) =>
     (option?.value ?? "").toLowerCase().startsWith(input.toLowerCase());
@@ -21,17 +13,23 @@ const onSelect = (data) => {
 export default function Home() {
     const [inputValue, setInputValue] = useState("");
 
-const handleSelect = (value) => {
-    console.log(`selected ${value}`);
-    setInputValue(""); // Clear the input after selection
-};
+    const handleSelect = (value) => {
+        const selectedFilm = films.find(film => film.Film_title === value);
+        message.success('Film found')
+        setInputValue('');
+    };
 
-const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
-        console.log(`Enter pressed, input value: ${inputValue}`);
-        setInputValue(""); // Clear the input after pressing Enter
-    }
-};
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            const film = films.find(film => film.Film_title.toLowerCase() === inputValue.toLowerCase());
+            if (!film) {
+                message.error('Film not found')
+            }
+            setInputValue('');
+        }
+    };
+
+    const filmTitles = films.map(film => ({ value: film.Film_title }));
 
     const dummyData = {
         Film_title: "Barbie",
@@ -47,7 +45,7 @@ const handleKeyPress = (event) => {
     return (
         <div className="flex flex-col items-center justify-center h-screen">
         <AutoComplete
-            options={options}
+            options={filmTitles}
             style={{ width: 200 }}
             onSelect={handleSelect}
             placeholder="Type here"
