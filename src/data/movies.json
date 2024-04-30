@@ -350,7 +350,7 @@
         "Original_language": "Japanese"
     },
     {
-        "Film_title": "Aladdin",
+        "Film_title": "Aladdin (1992)",
         "Release_year": 1992,
         "Director": "Ron Clements, John Musker",
         "Cast": "Scott Weinger",
@@ -360,12 +360,32 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "Alice in Wonderland",
+        "Film_title": "Aladdin (2019)",
+        "Release_year": 2019,
+        "Director": "Guy Ritchie",
+        "Cast": "Will Smith",
+        "Average_rating": 2.9,
+        "Genres": "Fantasy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Alice in Wonderland (2010)",
         "Release_year": 2010,
         "Director": "Tim Burton",
         "Cast": "Mia Wasikowska",
         "Average_rating": 3.1,
         "Genres": "Family",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Alice in Wonderland (1951)",
+        "Release_year": 1951,
+        "Director": "Hamilton Luske, Wilfred Jackson",
+        "Cast": "Kathryn Beaumont",
+        "Average_rating": 3.7,
+        "Genres": "Fantasy",
         "Countries": "USA",
         "Original_language": "English"
     },
@@ -880,11 +900,21 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "Beauty and the Beast",
+        "Film_title": "Beauty and the Beast (1991)",
         "Release_year": 1991,
         "Director": "Gary Trousdale, Kirk Wise",
         "Cast": "Paige O'Hara",
         "Average_rating": 3.9,
+        "Genres": "Romance",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Beauty and the Beast (2017)",
+        "Release_year": 2017,
+        "Director": "Bill Condon",
+        "Cast": "Emma Watson",
+        "Average_rating": 3.1,
         "Genres": "Romance",
         "Countries": "USA",
         "Original_language": "English"
@@ -3100,12 +3130,22 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "Halloween",
+        "Film_title": "Halloween (1978)",
         "Release_year": 1978,
         "Director": "John Carpenter",
         "Cast": "Donald Pleasence",
         "Average_rating": 3.8,
         "Genres": "Horror",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Halloween (2018)",
+        "Release_year": 2018,
+        "Director": "David Gordon Green",
+        "Cast": "Jamie Lee Curtis",
+        "Average_rating": 3.2,
+        "Genres": "Thriller",
         "Countries": "USA",
         "Original_language": "English"
     },
@@ -4650,11 +4690,21 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "Mean Girls",
+        "Film_title": "Mean Girls (2004)",
         "Release_year": 2004,
         "Director": "Mark Waters",
         "Cast": "Lindsay Lohan",
         "Average_rating": 3.8,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Mean Girls (2024)",
+        "Release_year": 2024,
+        "Director": "Arturo Perez Jr., Samantha Jayne",
+        "Cast": "Angourie Rice",
+        "Average_rating": 2.7,
         "Genres": "Comedy",
         "Countries": "USA",
         "Original_language": "English"
@@ -6240,12 +6290,22 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "Scream",
+        "Film_title": "Scream (1996)",
         "Release_year": 1996,
         "Director": "Wes Craven",
         "Cast": "David Arquette",
         "Average_rating": 4.0,
         "Genres": "Mystery",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Scream (2022)",
+        "Release_year": 2022,
+        "Director": "Matt Bettinelli-Olpin, Tyler Gillett",
+        "Cast": "Melissa Barrera",
+        "Average_rating": 3.2,
+        "Genres": "Thriller",
         "Countries": "USA",
         "Original_language": "English"
     },
@@ -6970,12 +7030,22 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "Suspiria",
+        "Film_title": "Suspiria (1977)",
         "Release_year": 1977,
         "Director": "Dario Argento",
         "Cast": "Jessica Harper",
         "Average_rating": 4.0,
         "Genres": "Horror",
+        "Countries": "Italy",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Suspiria (2018)",
+        "Release_year": 2018,
+        "Director": "Luca Guadagnino",
+        "Cast": "Dakota Johnson",
+        "Average_rating": 3.7,
+        "Genres": "Mystery",
         "Countries": "Italy",
         "Original_language": "English"
     },
@@ -8190,7 +8260,7 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "The Lion King",
+        "Film_title": "The Lion King (1994)",
         "Release_year": 1994,
         "Director": "Roger Allers, Rob Minkoff",
         "Cast": "Matthew Broderick",
@@ -8200,11 +8270,31 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "The Little Mermaid",
+        "Film_title": "The Lion King (2019)",
+        "Release_year": 2019,
+        "Director": "Jon Favreau",
+        "Cast": "Chiwetel Ejiofor",
+        "Average_rating": 2.8,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "The Little Mermaid (2023)",
         "Release_year": 2023,
         "Director": "Rob Marshall",
         "Cast": "Halle Bailey",
         "Average_rating": 3.2,
+        "Genres": "Family",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "The Little Mermaid (1989)",
+        "Release_year": 1989,
+        "Director": "Ron Clements, John Musker",
+        "Cast": "Jodi Benson",
+        "Average_rating": 3.7,
         "Genres": "Family",
         "Countries": "USA",
         "Original_language": "English"

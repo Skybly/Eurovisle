@@ -27,8 +27,8 @@ export const GameProvider = ({ children }) => {
     const getMovieIndex = () => {
         const today = new Date();
         let numericValue = today.getFullYear() * 5893 + (today.getMonth() + 1) * 241 + today.getDate();
-        while (numericValue > 990) {
-            numericValue -= 991;
+        while (numericValue > 999) {
+            numericValue -= 1000;
         }
         return numericValue;
     };
