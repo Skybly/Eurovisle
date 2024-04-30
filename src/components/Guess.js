@@ -1,6 +1,9 @@
+import React, { useContext } from 'react';
 import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
+import GameContext from '../context/GameContext';
 
 export default function Guess({ guess }) {
+    const { movie: actualAnswer } = useContext(GameContext);
     const {
         Film_title: guessTitle,
         Release_year: guessYear,
@@ -11,17 +14,6 @@ export default function Guess({ guess }) {
         Countries: guessCountry,
         Original_language: guessLanguage,
     } = guess;
-
-    const actualAnswer = {
-        Film_title: "Parasite",
-        Release_year: 2019,
-        Director: "Bong Joon-ho",
-        Cast: "Song Kang-ho",
-        Average_rating: 4.6,
-        Genres: "Comedy",
-        Countries: "South Korea",
-        Original_language: "Korean",
-    };
 
     const {
         Film_title: correctTitle,

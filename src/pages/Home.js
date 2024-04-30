@@ -1,13 +1,14 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Guess from "../components/Guess";
 import { AutoComplete, message, ConfigProvider } from "antd";
 import films from "../data/movies.json";
+import CountdownTimer from "../components/CountdownTimer";
 
 export default function Home() {
     const [inputValue, setInputValue] = useState("");
     const [filmsFromStorage, setFilmsFromStorage] = useState([]);
     const filterOption = (input, option) =>
-        (option?.value ?? "").toLowerCase().startsWith(input.toLowerCase());
+        (option?.value ?? "").toLowerCase().includes(input.toLowerCase());
 
     useEffect(() => {
         const storedFilms = JSON.parse(localStorage.getItem("films") || "[]");
@@ -17,7 +18,6 @@ export default function Home() {
     const handleSelect = (value) => {
         const selectedFilm = films.find((film) => film.Film_title === value);
         saveToLocal(selectedFilm);
-        console.log(filmsFromStorage);
         setInputValue("");
     };
 
@@ -45,19 +45,7 @@ export default function Home() {
             setInputValue("");
         }
     };
-
     const filmTitles = films.map((film) => ({ value: film.Film_title }));
-
-    const dummyData = {
-        Film_title: "Barbie",
-        Release_year: 2023,
-        Director: "Greta Gerwig",
-        Cast: "Margot Robbie",
-        Average_rating: 3.9,
-        Genres: "Comedy",
-        Countries: "UK",
-        Original_language: "English",
-    };
 
     return (
         <div className="flex flex-col items-center h-screen pt-10 justify-end gap-y-1">
