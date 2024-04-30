@@ -75,7 +75,7 @@ export default function Guess({ guess }) {
             </div>
             <div className="text-primary-innertext flex w-full justify-center gap-x-2">
                 <div
-                    className="p-2 rounded-sm w-28"
+                    className="p-2 rounded-md w-28"
                     style={{
                         background: yearRequired,
                     }}
@@ -94,7 +94,7 @@ export default function Guess({ guess }) {
                     </div>
                 </div>
                 <div
-                    className="p-2 rounded-sm w-28"
+                    className="p-2 rounded-md w-28"
                     style={{
                         background: ratingRequired,
                     }}
@@ -115,7 +115,7 @@ export default function Guess({ guess }) {
             </div>
             <div className="flex text-primary-innertext justify-center gap-x-2">
                 <div
-                    className="p-2 rounded-sm w-28"
+                    className="p-2 rounded-md w-28"
                     style={{
                         background: genreCorrect ? "#418243" : "#29282B",
                     }}
@@ -128,7 +128,7 @@ export default function Guess({ guess }) {
                     </div>
                 </div>
                 <div
-                    className="p-2 rounded-sm w-28"
+                    className="p-2 rounded-md w-28"
                     style={{
                         background: languageCorrect ? "#418243" : "#29282B",
                     }}
@@ -144,7 +144,7 @@ export default function Guess({ guess }) {
 
             <div className="flex gap-x-1 text-primary-innertext">
                 <div
-                    className="p-2 rounded-sm min-w-32"
+                    className="p-2 rounded-md min-w-32"
                     style={{
                         background: countryCorrect ? "#418243" : "#29282B",
                     }}
@@ -159,7 +159,7 @@ export default function Guess({ guess }) {
             </div>
             <div className="flex gap-x-1 text-primary-innertext">
                 <div
-                    className="p-2 rounded-sm min-w-32"
+                    className="rounded-md min-w-32 py-2 px-4"
                     style={{
                         background: directorCorrect ? "#418243" : "#29282B",
                     }}
@@ -174,7 +174,7 @@ export default function Guess({ guess }) {
             </div>
             <div className="flex gap-x-1 text-primary-innertext">
                 <div
-                    className="p-2 rounded-sm min-w-32"
+                    className="rounded-md min-w-32 py-2 px-4"
                     style={{
                         background: castCorrect ? "#418243" : "#29282B",
                     }}

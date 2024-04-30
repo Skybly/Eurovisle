@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.my-auto-complete .ant-select-selection-search-input {
+  color: #353535f0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
