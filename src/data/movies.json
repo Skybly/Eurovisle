@@ -360,32 +360,12 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "Aladdin",
-        "Release_year": 2019,
-        "Director": "Guy Ritchie",
-        "Cast": "Will Smith",
-        "Average_rating": 2.9,
-        "Genres": "Fantasy",
-        "Countries": "USA",
-        "Original_language": "English"
-    },
-    {
         "Film_title": "Alice in Wonderland",
         "Release_year": 2010,
         "Director": "Tim Burton",
         "Cast": "Mia Wasikowska",
         "Average_rating": 3.1,
         "Genres": "Family",
-        "Countries": "USA",
-        "Original_language": "English"
-    },
-    {
-        "Film_title": "Alice in Wonderland",
-        "Release_year": 1951,
-        "Director": "Hamilton Luske, Wilfred Jackson",
-        "Cast": "Kathryn Beaumont",
-        "Average_rating": 3.7,
-        "Genres": "Fantasy",
         "Countries": "USA",
         "Original_language": "English"
     },
@@ -905,16 +885,6 @@
         "Director": "Gary Trousdale, Kirk Wise",
         "Cast": "Paige O'Hara",
         "Average_rating": 3.9,
-        "Genres": "Romance",
-        "Countries": "USA",
-        "Original_language": "English"
-    },
-    {
-        "Film_title": "Beauty and the Beast",
-        "Release_year": 2017,
-        "Director": "Bill Condon",
-        "Cast": "Emma Watson",
-        "Average_rating": 3.1,
         "Genres": "Romance",
         "Countries": "USA",
         "Original_language": "English"
@@ -3140,16 +3110,6 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "Halloween",
-        "Release_year": 2018,
-        "Director": "David Gordon Green",
-        "Cast": "Jamie Lee Curtis",
-        "Average_rating": 3.2,
-        "Genres": "Thriller",
-        "Countries": "USA",
-        "Original_language": "English"
-    },
-    {
         "Film_title": "Halloween Kills",
         "Release_year": 2021,
         "Director": "David Gordon Green",
@@ -4695,16 +4655,6 @@
         "Director": "Mark Waters",
         "Cast": "Lindsay Lohan",
         "Average_rating": 3.8,
-        "Genres": "Comedy",
-        "Countries": "USA",
-        "Original_language": "English"
-    },
-    {
-        "Film_title": "Mean Girls",
-        "Release_year": 2024,
-        "Director": "Arturo Perez Jr., Samantha Jayne",
-        "Cast": "Angourie Rice",
-        "Average_rating": 2.7,
         "Genres": "Comedy",
         "Countries": "USA",
         "Original_language": "English"
@@ -6300,16 +6250,6 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "Scream",
-        "Release_year": 2022,
-        "Director": "Matt Bettinelli-Olpin, Tyler Gillett",
-        "Cast": "Melissa Barrera",
-        "Average_rating": 3.2,
-        "Genres": "Thriller",
-        "Countries": "USA",
-        "Original_language": "English"
-    },
-    {
         "Film_title": "Scream 2",
         "Release_year": 1997,
         "Director": "Wes Craven",
@@ -7036,16 +6976,6 @@
         "Cast": "Jessica Harper",
         "Average_rating": 4.0,
         "Genres": "Horror",
-        "Countries": "Italy",
-        "Original_language": "English"
-    },
-    {
-        "Film_title": "Suspiria",
-        "Release_year": 2018,
-        "Director": "Luca Guadagnino",
-        "Cast": "Dakota Johnson",
-        "Average_rating": 3.7,
-        "Genres": "Mystery",
         "Countries": "Italy",
         "Original_language": "English"
     },
@@ -8270,31 +8200,11 @@
         "Original_language": "English"
     },
     {
-        "Film_title": "The Lion King",
-        "Release_year": 2019,
-        "Director": "Jon Favreau",
-        "Cast": "Chiwetel Ejiofor",
-        "Average_rating": 2.8,
-        "Genres": "Drama",
-        "Countries": "USA",
-        "Original_language": "English"
-    },
-    {
         "Film_title": "The Little Mermaid",
         "Release_year": 2023,
         "Director": "Rob Marshall",
         "Cast": "Halle Bailey",
         "Average_rating": 3.2,
-        "Genres": "Family",
-        "Countries": "USA",
-        "Original_language": "English"
-    },
-    {
-        "Film_title": "The Little Mermaid",
-        "Release_year": 1989,
-        "Director": "Ron Clements, John Musker",
-        "Cast": "Jodi Benson",
-        "Average_rating": 3.7,
         "Genres": "Family",
         "Countries": "USA",
         "Original_language": "English"

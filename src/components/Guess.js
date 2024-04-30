@@ -107,7 +107,7 @@ export default function Guess({ guess }) {
             </div>
             <div className="flex text-primary-innertext justify-center gap-x-2">
                 <div
-                    className="p-2 rounded-md w-28"
+                    className="p-2 rounded-md w-32"
                     style={{
                         background: genreCorrect ? "#418243" : "#29282B",
                     }}
@@ -120,7 +120,7 @@ export default function Guess({ guess }) {
                     </div>
                 </div>
                 <div
-                    className="p-2 rounded-md w-28"
+                    className="p-2 rounded-md w-32"
                     style={{
                         background: languageCorrect ? "#418243" : "#29282B",
                     }}

@@ -8,7 +8,7 @@ export default function Home() {
     const [inputValue, setInputValue] = useState("");
     const [filmsFromStorage, setFilmsFromStorage] = useState([]);
     const filterOption = (input, option) =>
-        (option?.value ?? "").toLowerCase().includes(input.toLowerCase());
+        (option?.value ?? "").toLowerCase().startsWith(input.toLowerCase());
 
     useEffect(() => {
         const storedFilms = JSON.parse(localStorage.getItem("films") || "[]");
