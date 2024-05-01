@@ -10,7 +10,12 @@ const CountdownTimer = () => {
             midnight.setHours(24, 0, 0, 0);
             const timeRemaining = midnight.getTime() - now.getTime();
             setTimeUntilMidnight(timeRemaining);
+            if (timeRemaining === 0) {
+                localStorage.removeItem('films');
+                window.location.reload();
+            }
         };
+
         calculateTimeUntilMidnight();
         const timerId = setInterval(calculateTimeUntilMidnight, 1000);
         return () => clearInterval(timerId);
@@ -27,8 +32,14 @@ const CountdownTimer = () => {
             .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
     };
 
+    const deleteFilms = () => {
+        localStorage.removeItem("films");
+        window.location.reload();
+    };
+
     return (
-        <div className="text-2xl font-semibold text-primary-correct">
+        <div className="text-2xl font-semibold text-primary-text">
+            {/* <button onClick={deleteFilms} className="text-2xl font-semibold text-primary-correct">click</button> */}
             {formatTime(timeUntilMidnight)}
         </div>
     );

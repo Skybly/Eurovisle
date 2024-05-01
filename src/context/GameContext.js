@@ -5,22 +5,38 @@ const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
     const [movie, setMovie] = useState({});
+    const [daysSince, setDaysSince] = useState();
 
     useEffect(() => {
+        const baseDate = new Date('2024-05-01T00:00:00');
+
+        const calculateDaysSince = () => {
+            const today = new Date();
+            const difference = today - baseDate;
+            return Math.floor(difference / (1000 * 60 * 60 * 24));
+        };
+
         const fetchMovieIndex = () => {
             const index = getMovieIndex();
             setMovie(movies[index]);
             console.log(movies[index]);
         };
-        fetchMovieIndex();
+
+        const updateDaily = () => {
+            fetchMovieIndex();
+            setDaysSince(calculateDaysSince());
+        };
+
+        updateDaily();
 
         const midnightTime = getMidnightTime();
         const timeUntilMidnight = midnightTime - Date.now();
         const timeoutId = setTimeout(() => {
-            fetchMovieIndex();
-            const intervalId = setInterval(fetchMovieIndex, 24 * 60 * 60 * 1000);
+            updateDaily();
+            const intervalId = setInterval(updateDaily, 24 * 60 * 60 * 1000);
             return () => clearInterval(intervalId);
         }, timeUntilMidnight);
+
         return () => clearTimeout(timeoutId);
     }, []);
 
@@ -41,7 +57,7 @@ export const GameProvider = ({ children }) => {
     };
 
     return (
-        <GameContext.Provider value={{ movie }}>
+        <GameContext.Provider value={{ movie, daysSince }}>
             {children}
         </GameContext.Provider>
     );
