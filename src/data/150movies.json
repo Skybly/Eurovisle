@@ -1,0 +1,1502 @@
+[
+    {
+        "Film_title": "(500) Days of Summer",
+        "Release_year": 2009,
+        "Director": "Marc Webb",
+        "Cast": "Joseph Gordon-Levitt",
+        "Average_rating": 3.7,
+        "Genres": "Romance",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "10 Cloverfield Lane",
+        "Release_year": 2016,
+        "Director": "Dan Trachtenberg",
+        "Cast": "John Goodman",
+        "Average_rating": 3.6,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "10 Things I Hate About You",
+        "Release_year": 1999,
+        "Director": "Gil Junger",
+        "Cast": "Heath Ledger",
+        "Average_rating": 4.0,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "12 Angry Men",
+        "Release_year": 1957,
+        "Director": "Sidney Lumet",
+        "Cast": "Martin Balsam",
+        "Average_rating": 4.6,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "12 Years a Slave",
+        "Release_year": 2013,
+        "Director": "Steve McQueen",
+        "Cast": "Chiwetel Ejiofor",
+        "Average_rating": 4.1,
+        "Genres": "History",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "127 Hours",
+        "Release_year": 2010,
+        "Director": "Danny Boyle",
+        "Cast": "James Franco",
+        "Average_rating": 3.5,
+        "Genres": "Adventure",
+        "Countries": "France",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "13 Going on 30",
+        "Release_year": 2004,
+        "Director": "Gary Winick",
+        "Cast": "Jennifer Garner",
+        "Average_rating": 3.6,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "1917",
+        "Release_year": 2019,
+        "Director": "Sam Mendes",
+        "Cast": "George MacKay",
+        "Average_rating": 4.1,
+        "Genres": "History",
+        "Countries": "India",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "2001: A Space Odyssey",
+        "Release_year": 1968,
+        "Director": "Stanley Kubrick",
+        "Cast": "Keir Dullea",
+        "Average_rating": 4.3,
+        "Genres": "Adventure",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "20th Century Women",
+        "Release_year": 2016,
+        "Director": "Mike Mills",
+        "Cast": "Annette Bening",
+        "Average_rating": 4.0,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "21 Jump Street",
+        "Release_year": 2012,
+        "Director": "Phil Lord, Christopher Miller",
+        "Cast": "Jonah Hill",
+        "Average_rating": 3.6,
+        "Genres": "Crime",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "22 Jump Street",
+        "Release_year": 2014,
+        "Director": "Phil Lord, Christopher Miller",
+        "Cast": "Jonah Hill",
+        "Average_rating": 3.3,
+        "Genres": "Crime",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "28 Days Later",
+        "Release_year": 2002,
+        "Director": "Danny Boyle",
+        "Cast": "Cillian Murphy",
+        "Average_rating": 3.8,
+        "Genres": "Horror",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "300",
+        "Release_year": 2006,
+        "Director": "Zack Snyder",
+        "Cast": "Gerard Butler",
+        "Average_rating": 3.4,
+        "Genres": "Action",
+        "Countries": "Bulgaria",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "50 First Dates",
+        "Release_year": 2004,
+        "Director": "Peter Segal",
+        "Cast": "Adam Sandler",
+        "Average_rating": 3.2,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "8 Mile",
+        "Release_year": 2002,
+        "Director": "Curtis Hanson",
+        "Cast": "Eminem",
+        "Average_rating": 3.6,
+        "Genres": "Drama",
+        "Countries": "Germany",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "8½",
+        "Release_year": 1963,
+        "Director": "Federico Fellini",
+        "Cast": "Marcello Mastroianni",
+        "Average_rating": 4.3,
+        "Genres": "Drama",
+        "Countries": "Italy",
+        "Original_language": "Italian"
+    },
+    {
+        "Film_title": "A Beautiful Mind",
+        "Release_year": 2001,
+        "Director": "Ron Howard",
+        "Cast": "Russell Crowe",
+        "Average_rating": 3.8,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "A Bug's Life",
+        "Release_year": 1998,
+        "Director": "John Lasseter",
+        "Cast": "Dave Foley",
+        "Average_rating": 3.4,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "A Clockwork Orange",
+        "Release_year": 1971,
+        "Director": "Stanley Kubrick",
+        "Cast": "Malcolm McDowell",
+        "Average_rating": 4.1,
+        "Genres": "Science Fiction",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "A Ghost Story",
+        "Release_year": 2017,
+        "Director": "David Lowery",
+        "Cast": "Casey Affleck",
+        "Average_rating": 3.8,
+        "Genres": "Fantasy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "A Haunting in Venice",
+        "Release_year": 2023,
+        "Director": "Kenneth Branagh",
+        "Cast": "Kenneth Branagh",
+        "Average_rating": 3.0,
+        "Genres": "Crime",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "A Nightmare on Elm Street",
+        "Release_year": 1984,
+        "Director": "Wes Craven",
+        "Cast": "Heather Langenkamp",
+        "Average_rating": 3.7,
+        "Genres": "Horror",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "A Quiet Place",
+        "Release_year": 2018,
+        "Director": "John Krasinski",
+        "Cast": "John Krasinski",
+        "Average_rating": 3.6,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "A Quiet Place Part II",
+        "Release_year": 2020,
+        "Director": "John Krasinski",
+        "Cast": "Emily Blunt",
+        "Average_rating": 3.4,
+        "Genres": "Horror",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "A Silent Voice",
+        "Release_year": 2016,
+        "Director": "Naoko Yamada",
+        "Cast": "Miyu Irino",
+        "Average_rating": 4.2,
+        "Genres": "Drama",
+        "Countries": "Japan",
+        "Original_language": "Japanese"
+    },
+    {
+        "Film_title": "A Star Is Born",
+        "Release_year": 2018,
+        "Director": "Bradley Cooper",
+        "Cast": "Lady Gaga",
+        "Average_rating": 3.6,
+        "Genres": "Music",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "About Time",
+        "Release_year": 2013,
+        "Director": "Richard Curtis",
+        "Cast": "Domhnall Gleeson",
+        "Average_rating": 4.0,
+        "Genres": "Fantasy",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Ad Astra",
+        "Release_year": 2019,
+        "Director": "James Gray",
+        "Cast": "Brad Pitt",
+        "Average_rating": 3.4,
+        "Genres": "Drama",
+        "Countries": "Brazil",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Adaptation.",
+        "Release_year": 2002,
+        "Director": "Spike Jonze",
+        "Cast": "Nicolas Cage",
+        "Average_rating": 4.1,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "After Hours",
+        "Release_year": 1985,
+        "Director": "Martin Scorsese",
+        "Cast": "Griffin Dunne",
+        "Average_rating": 4.1,
+        "Genres": "Thriller",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Aftersun",
+        "Release_year": 2022,
+        "Director": "Charlotte Wells",
+        "Cast": "Frankie Corio",
+        "Average_rating": 4.2,
+        "Genres": "Drama",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Air",
+        "Release_year": 2023,
+        "Director": "Ben Affleck",
+        "Cast": "Matt Damon",
+        "Average_rating": 3.6,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Airplane!",
+        "Release_year": 1980,
+        "Director": "Jerry Zucker, Jim Abrahams",
+        "Cast": "Robert Hays",
+        "Average_rating": 3.8,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Akira",
+        "Release_year": 1988,
+        "Director": "Katsuhiro Otomo",
+        "Cast": "Mitsuo Iwata",
+        "Average_rating": 4.3,
+        "Genres": "Animation",
+        "Countries": "Japan",
+        "Original_language": "Japanese"
+    },
+    {
+        "Film_title": "Aladdin (1992)",
+        "Release_year": 1992,
+        "Director": "Ron Clements, John Musker",
+        "Cast": "Scott Weinger",
+        "Average_rating": 3.9,
+        "Genres": "Adventure",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Aladdin (2019)",
+        "Release_year": 2019,
+        "Director": "Guy Ritchie",
+        "Cast": "Will Smith",
+        "Average_rating": 2.9,
+        "Genres": "Fantasy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Alice in Wonderland (2010)",
+        "Release_year": 2010,
+        "Director": "Tim Burton",
+        "Cast": "Mia Wasikowska",
+        "Average_rating": 3.1,
+        "Genres": "Family",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Alice in Wonderland (1951)",
+        "Release_year": 1951,
+        "Director": "Hamilton Luske, Wilfred Jackson",
+        "Cast": "Kathryn Beaumont",
+        "Average_rating": 3.7,
+        "Genres": "Fantasy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Alien",
+        "Release_year": 1979,
+        "Director": "Ridley Scott",
+        "Cast": "Tom Skerritt",
+        "Average_rating": 4.3,
+        "Genres": "Horror",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Aliens",
+        "Release_year": 1986,
+        "Director": "James Cameron",
+        "Cast": "Sigourney Weaver",
+        "Average_rating": 4.2,
+        "Genres": "Science Fiction",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Alita: Battle Angel",
+        "Release_year": 2019,
+        "Director": "Robert Rodriguez",
+        "Cast": "Rosa Salazar",
+        "Average_rating": 3.2,
+        "Genres": "Adventure",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "All Quiet on the Western Front",
+        "Release_year": 2022,
+        "Director": "Edward Berger",
+        "Cast": "Felix Kammerer",
+        "Average_rating": 4.0,
+        "Genres": "Action",
+        "Countries": "Germany",
+        "Original_language": "German"
+    },
+    {
+        "Film_title": "All of Us Strangers",
+        "Release_year": 2023,
+        "Director": "Andrew Haigh",
+        "Cast": "Andrew Scott",
+        "Average_rating": 4.0,
+        "Genres": "Romance",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Almost Famous",
+        "Release_year": 2000,
+        "Director": "Cameron Crowe",
+        "Cast": "Billy Crudup",
+        "Average_rating": 4.0,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Amadeus",
+        "Release_year": 1984,
+        "Director": "Miloš Forman",
+        "Cast": "F. Murray Abraham",
+        "Average_rating": 4.3,
+        "Genres": "History",
+        "Countries": "France",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "American Beauty",
+        "Release_year": 1999,
+        "Director": "Sam Mendes",
+        "Cast": "Kevin Spacey",
+        "Average_rating": 4.0,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "American Fiction",
+        "Release_year": 2023,
+        "Director": "Cord Jefferson",
+        "Cast": "Jeffrey Wright",
+        "Average_rating": 3.7,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "American History X",
+        "Release_year": 1998,
+        "Director": "Tony Kaye",
+        "Cast": "Edward Norton",
+        "Average_rating": 4.1,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "American Hustle",
+        "Release_year": 2013,
+        "Director": "David O. Russell",
+        "Cast": "Christian Bale",
+        "Average_rating": 3.3,
+        "Genres": "Crime",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "American Psycho",
+        "Release_year": 2000,
+        "Director": "Mary Harron",
+        "Cast": "Christian Bale",
+        "Average_rating": 3.9,
+        "Genres": "Crime",
+        "Countries": "Canada",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "American Sniper",
+        "Release_year": 2014,
+        "Director": "Clint Eastwood",
+        "Cast": "Bradley Cooper",
+        "Average_rating": 3.3,
+        "Genres": "Action",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Amélie",
+        "Release_year": 2001,
+        "Director": "Jean-Pierre Jeunet",
+        "Cast": "Audrey Tautou",
+        "Average_rating": 4.2,
+        "Genres": "Romance",
+        "Countries": "France",
+        "Original_language": "French"
+    },
+    {
+        "Film_title": "Anatomy of a Fall",
+        "Release_year": 2023,
+        "Director": "Justine Triet",
+        "Cast": "Sandra Hüller",
+        "Average_rating": 4.2,
+        "Genres": "Mystery",
+        "Countries": "France",
+        "Original_language": "French"
+    },
+    {
+        "Film_title": "Anchorman: The Legend of Ron Burgundy",
+        "Release_year": 2004,
+        "Director": "Adam McKay",
+        "Cast": "Will Ferrell",
+        "Average_rating": 3.5,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Annie Hall",
+        "Release_year": 1977,
+        "Director": "Woody Allen",
+        "Cast": "Woody Allen",
+        "Average_rating": 4.0,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Annihilation",
+        "Release_year": 2018,
+        "Director": "Alex Garland",
+        "Cast": "Natalie Portman",
+        "Average_rating": 3.6,
+        "Genres": "Horror",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Another Round",
+        "Release_year": 2020,
+        "Director": "Thomas Vinterberg",
+        "Cast": "Mads Mikkelsen",
+        "Average_rating": 4.1,
+        "Genres": "Drama",
+        "Countries": "Denmark",
+        "Original_language": "Danish"
+    },
+    {
+        "Film_title": "Ant-Man",
+        "Release_year": 2015,
+        "Director": "Peyton Reed",
+        "Cast": "Paul Rudd",
+        "Average_rating": 3.2,
+        "Genres": "Adventure",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Ant-Man and the Wasp",
+        "Release_year": 2018,
+        "Director": "Peyton Reed",
+        "Cast": "Paul Rudd",
+        "Average_rating": 2.9,
+        "Genres": "Adventure",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Ant-Man and the Wasp: Quantumania",
+        "Release_year": 2023,
+        "Director": "Peyton Reed",
+        "Cast": "Paul Rudd",
+        "Average_rating": 2.3,
+        "Genres": "Adventure",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Anyone But You",
+        "Release_year": 2023,
+        "Director": "Will Gluck",
+        "Cast": "Sydney Sweeney",
+        "Average_rating": 3.0,
+        "Genres": "Romance",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Apocalypse Now",
+        "Release_year": 1979,
+        "Director": "Francis Ford Coppola",
+        "Cast": "Martin Sheen",
+        "Average_rating": 4.4,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Aquaman",
+        "Release_year": 2018,
+        "Director": "James Wan",
+        "Cast": "Jason Momoa",
+        "Average_rating": 2.8,
+        "Genres": "Fantasy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Are You There God? It's Me, Margaret.",
+        "Release_year": 2023,
+        "Director": "Kelly Fremon Craig",
+        "Cast": "Abby Ryder Fortson",
+        "Average_rating": 3.8,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Argo",
+        "Release_year": 2012,
+        "Director": "Ben Affleck",
+        "Cast": "Ben Affleck",
+        "Average_rating": 3.7,
+        "Genres": "Thriller",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Arrival",
+        "Release_year": 2016,
+        "Director": "Denis Villeneuve",
+        "Cast": "Amy Adams",
+        "Average_rating": 4.1,
+        "Genres": "Science Fiction",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Asteroid City",
+        "Release_year": 2023,
+        "Director": "Wes Anderson",
+        "Cast": "Jason Schwartzman",
+        "Average_rating": 3.5,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Atonement",
+        "Release_year": 2007,
+        "Director": "Joe Wright",
+        "Cast": "James McAvoy",
+        "Average_rating": 4.0,
+        "Genres": "Romance",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Audition",
+        "Release_year": 1999,
+        "Director": "Takashi Miike",
+        "Cast": "Ryo Ishibashi",
+        "Average_rating": 3.8,
+        "Genres": "Drama",
+        "Countries": "Japan",
+        "Original_language": "Japanese"
+    },
+    {
+        "Film_title": "Avatar",
+        "Release_year": 2009,
+        "Director": "James Cameron",
+        "Cast": "Sam Worthington",
+        "Average_rating": 3.6,
+        "Genres": "Fantasy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Avatar: The Way of Water",
+        "Release_year": 2022,
+        "Director": "James Cameron",
+        "Cast": "Sam Worthington",
+        "Average_rating": 3.6,
+        "Genres": "Action",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Avengers: Age of Ultron",
+        "Release_year": 2015,
+        "Director": "Joss Whedon",
+        "Cast": "Robert Downey Jr.",
+        "Average_rating": 3.1,
+        "Genres": "Action",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Avengers: Endgame",
+        "Release_year": 2019,
+        "Director": "Anthony Russo, Joe Russo",
+        "Cast": "Robert Downey Jr.",
+        "Average_rating": 3.9,
+        "Genres": "Science Fiction",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Avengers: Infinity War",
+        "Release_year": 2018,
+        "Director": "Anthony Russo, Joe Russo",
+        "Cast": "Robert Downey Jr.",
+        "Average_rating": 4.0,
+        "Genres": "Action",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Baby Driver",
+        "Release_year": 2017,
+        "Director": "Edgar Wright",
+        "Cast": "Ansel Elgort",
+        "Average_rating": 3.7,
+        "Genres": "Crime",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Babylon",
+        "Release_year": 2022,
+        "Director": "Damien Chazelle",
+        "Cast": "Brad Pitt",
+        "Average_rating": 3.8,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Back to the Future",
+        "Release_year": 1985,
+        "Director": "Robert Zemeckis",
+        "Cast": "Michael J. Fox",
+        "Average_rating": 4.2,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Back to the Future Part II",
+        "Release_year": 1989,
+        "Director": "Robert Zemeckis",
+        "Cast": "Michael J. Fox",
+        "Average_rating": 3.9,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Back to the Future Part III",
+        "Release_year": 1990,
+        "Director": "Robert Zemeckis",
+        "Cast": "Michael J. Fox",
+        "Average_rating": 3.5,
+        "Genres": "Science Fiction",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Barbarian",
+        "Release_year": 2022,
+        "Director": "Zach Cregger",
+        "Cast": "Georgina Campbell",
+        "Average_rating": 3.5,
+        "Genres": "Mystery",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Barbie",
+        "Release_year": 2023,
+        "Director": "Greta Gerwig",
+        "Cast": "Margot Robbie",
+        "Average_rating": 3.9,
+        "Genres": "Comedy",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Barry Lyndon",
+        "Release_year": 1975,
+        "Director": "Stanley Kubrick",
+        "Cast": "Ryan O'Neal",
+        "Average_rating": 4.4,
+        "Genres": "Drama",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Batman",
+        "Release_year": 1989,
+        "Director": "Tim Burton",
+        "Cast": "Michael Keaton",
+        "Average_rating": 3.6,
+        "Genres": "Fantasy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Batman Begins",
+        "Release_year": 2005,
+        "Director": "Christopher Nolan",
+        "Cast": "Christian Bale",
+        "Average_rating": 3.8,
+        "Genres": "Crime",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Batman Returns",
+        "Release_year": 1992,
+        "Director": "Tim Burton",
+        "Cast": "Michael Keaton",
+        "Average_rating": 3.5,
+        "Genres": "Fantasy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Batman v Superman: Dawn of Justice",
+        "Release_year": 2016,
+        "Director": "Zack Snyder",
+        "Cast": "Ben Affleck",
+        "Average_rating": 2.4,
+        "Genres": "Action",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Battle Royale",
+        "Release_year": 2000,
+        "Director": "Kinji Fukasaku",
+        "Cast": "Tatsuya Fujiwara",
+        "Average_rating": 3.9,
+        "Genres": "Action",
+        "Countries": "Japan",
+        "Original_language": "Japanese"
+    },
+    {
+        "Film_title": "Beau Is Afraid",
+        "Release_year": 2023,
+        "Director": "Ari Aster",
+        "Cast": "Joaquin Phoenix",
+        "Average_rating": 3.4,
+        "Genres": "Fantasy",
+        "Countries": "Finland",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Beautiful Boy",
+        "Release_year": 2018,
+        "Director": "Felix van Groeningen",
+        "Cast": "Steve Carell",
+        "Average_rating": 3.9,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Beauty and the Beast (1991)",
+        "Release_year": 1991,
+        "Director": "Gary Trousdale, Kirk Wise",
+        "Cast": "Paige O'Hara",
+        "Average_rating": 3.9,
+        "Genres": "Romance",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Beauty and the Beast (2017)",
+        "Release_year": 2017,
+        "Director": "Bill Condon",
+        "Cast": "Emma Watson",
+        "Average_rating": 3.1,
+        "Genres": "Romance",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bee Movie",
+        "Release_year": 2007,
+        "Director": "Steve Hickner, Simon J. Smith",
+        "Cast": "Jerry Seinfeld",
+        "Average_rating": 2.9,
+        "Genres": "Family",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Beetlejuice",
+        "Release_year": 1988,
+        "Director": "Tim Burton",
+        "Cast": "Alec Baldwin",
+        "Average_rating": 3.8,
+        "Genres": "Fantasy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Before Midnight",
+        "Release_year": 2013,
+        "Director": "Richard Linklater",
+        "Cast": "Ethan Hawke",
+        "Average_rating": 4.1,
+        "Genres": "Drama",
+        "Countries": "Greece",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Before Sunrise",
+        "Release_year": 1995,
+        "Director": "Richard Linklater",
+        "Cast": "Ethan Hawke",
+        "Average_rating": 4.3,
+        "Genres": "Romance",
+        "Countries": "Austria",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Before Sunset",
+        "Release_year": 2004,
+        "Director": "Richard Linklater",
+        "Cast": "Ethan Hawke",
+        "Average_rating": 4.3,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Being John Malkovich",
+        "Release_year": 1999,
+        "Director": "Spike Jonze",
+        "Cast": "John Cusack",
+        "Average_rating": 4.1,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Belfast",
+        "Release_year": 2021,
+        "Director": "Kenneth Branagh",
+        "Cast": "Jude Hill",
+        "Average_rating": 3.5,
+        "Genres": "Drama",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Big Fish",
+        "Release_year": 2003,
+        "Director": "Tim Burton",
+        "Cast": "Ewan McGregor",
+        "Average_rating": 3.9,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Big Hero 6",
+        "Release_year": 2014,
+        "Director": "Chris Williams, Don Hall",
+        "Cast": "Scott Adsit",
+        "Average_rating": 3.8,
+        "Genres": "Animation",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bird Box",
+        "Release_year": 2018,
+        "Director": "Susanne Bier",
+        "Cast": "Sandra Bullock",
+        "Average_rating": 2.9,
+        "Genres": "Thriller",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Birdman or (The Unexpected Virtue of Ignorance)",
+        "Release_year": 2014,
+        "Director": "Alejandro González Iñárritu",
+        "Cast": "Michael Keaton",
+        "Average_rating": 4.0,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Birds of Prey (and the Fantabulous Emancipation of One Harley Quinn)",
+        "Release_year": 2020,
+        "Director": "Cathy Yan",
+        "Cast": "Margot Robbie",
+        "Average_rating": 3.0,
+        "Genres": "Action",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "BlacKkKlansman",
+        "Release_year": 2018,
+        "Director": "Spike Lee",
+        "Cast": "John David Washington",
+        "Average_rating": 3.9,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Black Adam",
+        "Release_year": 2022,
+        "Director": "Jaume Collet-Serra",
+        "Cast": "Dwayne Johnson",
+        "Average_rating": 2.3,
+        "Genres": "Science Fiction",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Black Panther",
+        "Release_year": 2018,
+        "Director": "Ryan Coogler",
+        "Cast": "Chadwick Boseman",
+        "Average_rating": 3.6,
+        "Genres": "Adventure",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Black Panther: Wakanda Forever",
+        "Release_year": 2022,
+        "Director": "Ryan Coogler",
+        "Cast": "Letitia Wright",
+        "Average_rating": 3.4,
+        "Genres": "Adventure",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Black Swan",
+        "Release_year": 2010,
+        "Director": "Darren Aronofsky",
+        "Cast": "Natalie Portman",
+        "Average_rating": 4.1,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Black Widow",
+        "Release_year": 2021,
+        "Director": "Cate Shortland",
+        "Cast": "Scarlett Johansson",
+        "Average_rating": 2.9,
+        "Genres": "Science Fiction",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Blade Runner",
+        "Release_year": 1982,
+        "Director": "Ridley Scott",
+        "Cast": "Harrison Ford",
+        "Average_rating": 4.1,
+        "Genres": "Thriller",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Blade Runner 2049",
+        "Release_year": 2017,
+        "Director": "Denis Villeneuve",
+        "Cast": "Ryan Gosling",
+        "Average_rating": 4.1,
+        "Genres": "Science Fiction",
+        "Countries": "Canada",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Blonde",
+        "Release_year": 2022,
+        "Director": "Andrew Dominik",
+        "Cast": "Ana de Armas",
+        "Average_rating": 2.0,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Blue Beetle",
+        "Release_year": 2023,
+        "Director": "Ángel Manuel Soto",
+        "Cast": "Xolo Mariduena",
+        "Average_rating": 2.9,
+        "Genres": "Action",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Blue Is the Warmest Color",
+        "Release_year": 2013,
+        "Director": "Abdellatif Kechiche",
+        "Cast": "Adèle Exarchopoulos",
+        "Average_rating": 3.3,
+        "Genres": "Drama",
+        "Countries": "Belgium",
+        "Original_language": "French"
+    },
+    {
+        "Film_title": "Blue Valentine",
+        "Release_year": 2010,
+        "Director": "Derek Cianfrance",
+        "Cast": "Ryan Gosling",
+        "Average_rating": 3.8,
+        "Genres": "Romance",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Blue Velvet",
+        "Release_year": 1986,
+        "Director": "David Lynch",
+        "Cast": "Kyle MacLachlan",
+        "Average_rating": 4.1,
+        "Genres": "Thriller",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bodies Bodies Bodies",
+        "Release_year": 2022,
+        "Director": "Halina Reijn",
+        "Cast": "Amandla Stenberg",
+        "Average_rating": 3.3,
+        "Genres": "Mystery",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bohemian Rhapsody",
+        "Release_year": 2018,
+        "Director": "Bryan Singer",
+        "Cast": "Rami Malek",
+        "Average_rating": 3.4,
+        "Genres": "Drama",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bolt",
+        "Release_year": 2008,
+        "Director": "Chris Williams, Byron Howard",
+        "Cast": "John Travolta",
+        "Average_rating": 3.1,
+        "Genres": "Family",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bones and All",
+        "Release_year": 2022,
+        "Director": "Luca Guadagnino",
+        "Cast": "Taylor Russell",
+        "Average_rating": 3.6,
+        "Genres": "Horror",
+        "Countries": "Italy",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Boogie Nights",
+        "Release_year": 1997,
+        "Director": "Paul Thomas Anderson",
+        "Cast": "Mark Wahlberg",
+        "Average_rating": 4.2,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Booksmart",
+        "Release_year": 2019,
+        "Director": "Olivia Wilde",
+        "Cast": "Beanie Feldstein",
+        "Average_rating": 3.8,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Borat Subsequent Moviefilm",
+        "Release_year": 2020,
+        "Director": "Jason Woliner",
+        "Cast": "Sacha Baron Cohen",
+        "Average_rating": 3.3,
+        "Genres": "Comedy",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan",
+        "Release_year": 2006,
+        "Director": "Larry Charles",
+        "Cast": "Sacha Baron Cohen",
+        "Average_rating": 3.7,
+        "Genres": "Comedy",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bottoms",
+        "Release_year": 2023,
+        "Director": "Emma Seligman",
+        "Cast": "Rachel Sennott",
+        "Average_rating": 3.8,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Boyhood",
+        "Release_year": 2014,
+        "Director": "Richard Linklater",
+        "Cast": "Ellar Coltrane",
+        "Average_rating": 3.8,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bram Stoker's Dracula",
+        "Release_year": 1992,
+        "Director": "Francis Ford Coppola",
+        "Cast": "Gary Oldman",
+        "Average_rating": 3.7,
+        "Genres": "Horror",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Brave",
+        "Release_year": 2012,
+        "Director": "Brenda Chapman, Mark Andrews",
+        "Cast": "Kelly Macdonald",
+        "Average_rating": 3.3,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Braveheart",
+        "Release_year": 1995,
+        "Director": "Mel Gibson",
+        "Cast": "Mel Gibson",
+        "Average_rating": 3.9,
+        "Genres": "History",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Brazil",
+        "Release_year": 1985,
+        "Director": "Terry Gilliam",
+        "Cast": "Jonathan Pryce",
+        "Average_rating": 4.1,
+        "Genres": "Science Fiction",
+        "Countries": "UK",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Breakfast at Tiffany's",
+        "Release_year": 1961,
+        "Director": "Blake Edwards",
+        "Cast": "Audrey Hepburn",
+        "Average_rating": 3.8,
+        "Genres": "Romance",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Breathless",
+        "Release_year": 1960,
+        "Director": "Jean-Luc Godard",
+        "Cast": "Jean-Paul Belmondo",
+        "Average_rating": 3.9,
+        "Genres": "Crime",
+        "Countries": "France",
+        "Original_language": "French"
+    },
+    {
+        "Film_title": "Bridesmaids",
+        "Release_year": 2011,
+        "Director": "Paul Feig",
+        "Cast": "Kristen Wiig",
+        "Average_rating": 3.4,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bridge to Terabithia",
+        "Release_year": 2007,
+        "Director": "Gábor Csupó",
+        "Cast": "Josh Hutcherson",
+        "Average_rating": 3.6,
+        "Genres": "Family",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bridget Jones's Diary",
+        "Release_year": 2001,
+        "Director": "Sharon Maguire",
+        "Cast": "Renée Zellweger",
+        "Average_rating": 3.4,
+        "Genres": "Comedy",
+        "Countries": "France",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Brokeback Mountain",
+        "Release_year": 2005,
+        "Director": "Ang Lee",
+        "Cast": "Heath Ledger",
+        "Average_rating": 4.1,
+        "Genres": "Romance",
+        "Countries": "Canada",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Bullet Train",
+        "Release_year": 2022,
+        "Director": "David Leitch",
+        "Cast": "Brad Pitt",
+        "Average_rating": 3.5,
+        "Genres": "Thriller",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Burn After Reading",
+        "Release_year": 2008,
+        "Director": "Ethan Coen, Joel Coen",
+        "Cast": "George Clooney",
+        "Average_rating": 3.6,
+        "Genres": "Comedy",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Burning",
+        "Release_year": 2018,
+        "Director": "Lee Chang-dong",
+        "Cast": "Yoo Ah-in",
+        "Average_rating": 4.1,
+        "Genres": "Thriller",
+        "Countries": "Japan",
+        "Original_language": "Korean"
+    },
+    {
+        "Film_title": "But I'm a Cheerleader",
+        "Release_year": 1999,
+        "Director": "Jamie Babbit",
+        "Cast": "Natasha Lyonne",
+        "Average_rating": 4.0,
+        "Genres": "Romance",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "C'mon C'mon",
+        "Release_year": 2021,
+        "Director": "Mike Mills",
+        "Cast": "Joaquin Phoenix",
+        "Average_rating": 4.1,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "CODA",
+        "Release_year": 2021,
+        "Director": "Siân Heder",
+        "Cast": "Emilia Jones",
+        "Average_rating": 3.9,
+        "Genres": "Music",
+        "Countries": "France",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Call Me by Your Name",
+        "Release_year": 2017,
+        "Director": "Luca Guadagnino",
+        "Cast": "Armie Hammer",
+        "Average_rating": 3.9,
+        "Genres": "Romance",
+        "Countries": "Brazil",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Candyman",
+        "Release_year": 2021,
+        "Director": "Nia DaCosta",
+        "Cast": "Yahya Abdul-Mateen II",
+        "Average_rating": 3.1,
+        "Genres": "Thriller",
+        "Countries": "Canada",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Captain America: Civil War",
+        "Release_year": 2016,
+        "Director": "Anthony Russo, Joe Russo",
+        "Cast": "Chris Evans",
+        "Average_rating": 3.6,
+        "Genres": "Action",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Captain America: The First Avenger",
+        "Release_year": 2011,
+        "Director": "Joe Johnston",
+        "Cast": "Chris Evans",
+        "Average_rating": 3.3,
+        "Genres": "Science Fiction",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Captain America: The Winter Soldier",
+        "Release_year": 2014,
+        "Director": "Anthony Russo, Joe Russo",
+        "Cast": "Chris Evans",
+        "Average_rating": 3.7,
+        "Genres": "Adventure",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Captain Fantastic",
+        "Release_year": 2016,
+        "Director": "Matt Ross",
+        "Cast": "Viggo Mortensen",
+        "Average_rating": 3.9,
+        "Genres": "Drama",
+        "Countries": "USA",
+        "Original_language": "English"
+    },
+    {
+        "Film_title": "Captain Marvel",
+        "Release_year": 2019,
+        "Director": "Ryan Fleck, Anna Boden",
+        "Cast": "Brie Larson",
+        "Average_rating": 2.7,
+        "Genres": "Science Fiction",
+        "Countries": "USA",
+        "Original_language": "English"
+    }
+]

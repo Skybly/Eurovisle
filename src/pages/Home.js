@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import Guess from "../components/Guess";
 import { AutoComplete, message, ConfigProvider, Modal, Button } from "antd";
-import films from "../data/movies.json";
+import films from "../data/150movies.json";
 import CountdownTimer from "../components/CountdownTimer";
 import GameContext from "../context/GameContext";
 import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
@@ -135,7 +135,7 @@ export default function Home() {
                     film.Film_title.toLowerCase() === inputValue.toLowerCase()
             );
             if (!film && !selectFlag.current) {
-                message.error("Film not in top 1000!");
+                message.error("Film not in top 150!");
             }
             setInputValue("");
             selectFlag.current = false;
@@ -259,7 +259,7 @@ export default function Home() {
                         How to play
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
-                        Cinephidle is based on the top 1000 most popular films
+                        Cinephidle is based on the top 150 most popular films
                         on <span style={{ color: "#ff6188" }}>Letterboxd</span>{" "}
                         as of 2024.
                     </div>

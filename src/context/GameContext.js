@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-import movies from "../data/movies.json";
+import movies from "../data/150movies.json";
 
 const GameContext = createContext();
 
@@ -42,9 +42,9 @@ export const GameProvider = ({ children }) => {
 
     const getMovieIndex = () => {
         const today = new Date();
-        let numericValue = today.getFullYear() * 5893 + (today.getMonth() + 1) * 241 + today.getDate();
-        while (numericValue > 999) {
-            numericValue -= 1000;
+        let numericValue = today.getFullYear() * 5803 + (today.getMonth() + 1) * 241 + today.getDate();
+        while (numericValue > 149) {
+            numericValue -= 150;
         }
         return numericValue;
     };
