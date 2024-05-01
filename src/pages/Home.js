@@ -4,6 +4,7 @@ import { AutoComplete, message, ConfigProvider, Modal, Button } from "antd";
 import films from "../data/movies.json";
 import CountdownTimer from "../components/CountdownTimer";
 import GameContext from "../context/GameContext";
+import { QuestionCircleOutlined } from "@ant-design/icons";
 
 export default function Home() {
     const { movie } = useContext(GameContext);
@@ -13,15 +14,19 @@ export default function Home() {
     const [inputValue, setInputValue] = useState("");
     const [filmsFromStorage, setFilmsFromStorage] = useState([]);
     const selectFlag = useRef(false);
-    const [gameOver, setGameOver] = useState(JSON.parse(localStorage.getItem("gameOver") || "false"));
-    const [win, setWin] = useState(JSON.parse(localStorage.getItem("win") || "false"));
+    const [gameOver, setGameOver] = useState(
+        JSON.parse(localStorage.getItem("gameOver") || "false")
+    );
+    const [win, setWin] = useState(
+        JSON.parse(localStorage.getItem("win") || "false")
+    );
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
         if (gameOver) {
             setOpen(true);
         }
-    }, [])
+    }, []);
 
     const showModal = () => {
         setOpen(true);
@@ -61,7 +66,9 @@ export default function Home() {
                 localStorage.setItem("gameOver", JSON.stringify(true));
                 setGameOver(true);
                 showModal();
-                message.error("Game over! You've reached 10 turns without a correct final guess.");
+                message.error(
+                    "Game over! You've reached 10 turns without a correct final guess."
+                );
             }
         } else {
             localStorage.setItem("win", JSON.stringify(win));
@@ -70,8 +77,7 @@ export default function Home() {
                 setWin(win);
                 setGameOver(true);
                 showModal();
-            }
-            else{
+            } else {
                 localStorage.setItem("gameOver", JSON.stringify(false));
             }
         }
@@ -82,20 +88,24 @@ export default function Home() {
     };
 
     const resultCopy = () => {
-        let result = "Cinephidle #" +  daysSince  + " 🎬\n\n";
-        message.success("Result copied to clipboard!");
+        let result = "Cinephidle #" + daysSince + " 🎬\n\n";
         const guesses = filmsFromStorage.length - 1;
         for (let i = 0; i < guesses; i++) {
             result = result + wrongEmoji;
         }
-        if (win){
+        if (win) {
             result = result + correctEmoji;
-        }
-        else{
+        } else {
             result = result + wrongEmoji;
         }
-        result = result + "\n\nCinephidle.com"
-        console.log(result);
+        result = result + "\n\nCinephidle.com";
+        navigator.clipboard.writeText(result)
+        .then(() => {
+            message.success("Result copied to clipboard!");
+        })
+        .catch(err => {
+            console.log(err);
+        });
     };
 
     const saveToLocal = (selectedFilm) => {
@@ -130,7 +140,14 @@ export default function Home() {
     const filmTitles = films.map((film) => ({ value: film.Film_title }));
 
     return (
-        <div className="flex flex-col items-center h-screen pt-10 justify-end gap-y-1">
+        <div className="flex flex-col items-center h-screen justify-end gap-y-1v pt-5">
+            <div className="h-20 flex flex-col items-center justify-center">
+                <img
+                    src="/Name.svg"
+                    alt="name"
+                    style={{ height: "300px" }}
+                ></img>
+            </div>
             <ConfigProvider
                 theme={{
                     components: {
@@ -155,12 +172,16 @@ export default function Home() {
                     },
                 }}
             >
-                <CountdownTimer />
-                <Button type="primary" onClick={showModal}>
-                    Open Modal
-                </Button>
                 <div>
                     {" "}
+                    <div className="font-poppins flex justify-between px-1 mb-1">
+                        <div>
+                            <QuestionCircleOutlined className="text-primary-gray transition-colors duration-200 hover:cursor-pointer hover:text-primary-text" />
+                        </div>
+                        <div className="text-primary-text brightness-50">
+                            {filmsFromStorage.length}/10
+                        </div>
+                    </div>
                     <AutoComplete
                         options={filmTitles}
                         disabled={gameOver}
@@ -176,6 +197,10 @@ export default function Home() {
                     />
                 </div>
                 <div className="pt-8 flex flex-col gap-y-10 overflow-y-scroll h-[90vh] pb-28 w-full items-center">
+                    <CountdownTimer />
+                    <Button type="primary" onClick={showModal}>
+                        Open Modal
+                    </Button>
                     {filmsFromStorage.map((film) => (
                         <Guess key={film.Film_title} guess={film} />
                     ))}
@@ -189,7 +214,7 @@ export default function Home() {
                             <button
                                 onClick={resultCopy}
                                 style={{ backgroundColor: "#000000" }}
-                                className="text-primary-text font-semibold hover:text-primary-innertext py-2 px-5 rounded-md"
+                                className="text-primary-text font-semibold hover:text-primary-innertext py-2 px-5 rounded-md mt-5"
                             >
                                 Share Result
                             </button>
@@ -197,7 +222,9 @@ export default function Home() {
                     )}
                 >
                     <div className="text-2xl text-center text-primary-text font-semibold mt-5">
-                        {win ? "Congratulations! You've guessed the film!" : "Sorry, better luck next time!"}
+                        {win
+                            ? "Congratulations! You've guessed the film!"
+                            : "Sorry, better luck next time!"}
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-10">
                         Today's film is{" "}

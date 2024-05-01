@@ -34,12 +34,14 @@ const CountdownTimer = () => {
 
     const deleteFilms = () => {
         localStorage.removeItem("films");
+        localStorage.removeItem("gameOver");
+        localStorage.removeItem("win");
         window.location.reload();
     };
 
     return (
         <div className="text-2xl font-semibold text-primary-text">
-            {/* <button onClick={deleteFilms} className="text-2xl font-semibold text-primary-correct">click</button> */}
+            <button onClick={deleteFilms} className="text-2xl font-semibold text-primary-correct">click</button>
             {formatTime(timeUntilMidnight)}
         </div>
     );
