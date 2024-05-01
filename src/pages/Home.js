@@ -147,7 +147,7 @@ export default function Home() {
         <div className="flex flex-col items-center h-screen justify-end gap-y-1v pt-5">
             <div className="h-20 flex flex-col items-center justify-center">
                 <img
-                    src="/Name.svg"
+                    src="/static/images/Name.svg"
                     alt="name"
                     style={{ height: "300px" }}
                 ></img>
@@ -253,9 +253,9 @@ export default function Home() {
                     closeIcon={customCloseIcon()}
                     onOk={handleHelpOk}
                     onCancel={handleHelpCancel}
-                    footer={() => <></>}
+                    footer={null}
                 >
-                    <div className="text-2xl text-center text-primary-text font-bold mt-5 font-montserrat">
+                    <div className="text-3xl text-center text-primary-text font-bold mt-5 font-montserrat">
                         How to play
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
