@@ -4,7 +4,7 @@ import { AutoComplete, message, ConfigProvider, Modal, Button } from "antd";
 import films from "../data/movies.json";
 import CountdownTimer from "../components/CountdownTimer";
 import GameContext from "../context/GameContext";
-import { QuestionCircleOutlined } from "@ant-design/icons";
+import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
 
 export default function Home() {
     const { movie } = useContext(GameContext);
@@ -21,6 +21,8 @@ export default function Home() {
         JSON.parse(localStorage.getItem("win") || "false")
     );
     const [open, setOpen] = useState(false);
+    const [helpOpen, setHelpOpen] = useState(false);
+    const customCloseIcon = () => <CloseOutlined style={{color: 'aliceblue'}}/>;
 
     useEffect(() => {
         if (gameOver) {
@@ -36,6 +38,15 @@ export default function Home() {
     };
     const handleCancel = () => {
         setOpen(false);
+    };
+    const showHelp = () => {
+        setHelpOpen(true);
+    };
+    const handleHelpOk = () => {
+        setHelpOpen(false);
+    };
+    const handleHelpCancel = () => {
+        setHelpOpen(false);
     };
 
     const filterOption = (input, option) =>
@@ -99,13 +110,14 @@ export default function Home() {
             result = result + wrongEmoji;
         }
         result = result + "\n\nCinephidle.com";
-        navigator.clipboard.writeText(result)
-        .then(() => {
-            message.success("Result copied to clipboard!");
-        })
-        .catch(err => {
-            console.log(err);
-        });
+        navigator.clipboard
+            .writeText(result)
+            .then(() => {
+                message.success("Result copied to clipboard!");
+            })
+            .catch((err) => {
+                console.log(err);
+            });
     };
 
     const saveToLocal = (selectedFilm) => {
@@ -176,7 +188,10 @@ export default function Home() {
                     {" "}
                     <div className="font-poppins flex justify-between px-1 mb-1">
                         <div>
-                            <QuestionCircleOutlined className="text-primary-gray transition-colors duration-200 hover:cursor-pointer hover:text-primary-text" />
+                            <QuestionCircleOutlined
+                                className="text-primary-gray transition-colors duration-200 hover:cursor-pointer hover:text-primary-text"
+                                onClick={showHelp}
+                            />
                         </div>
                         <div className="text-primary-text brightness-50">
                             {filmsFromStorage.length}/10
@@ -197,10 +212,10 @@ export default function Home() {
                     />
                 </div>
                 <div className="pt-8 flex flex-col gap-y-10 overflow-y-scroll h-[90vh] pb-28 w-full items-center">
-                    <CountdownTimer />
+                    {/* <CountdownTimer />
                     <Button type="primary" onClick={showModal}>
                         Open Modal
-                    </Button>
+                    </Button> */}
                     {filmsFromStorage.map((film) => (
                         <Guess key={film.Film_title} guess={film} />
                     ))}
@@ -208,6 +223,7 @@ export default function Home() {
                 <Modal
                     open={open}
                     onOk={handleOk}
+                    closeIcon={customCloseIcon()}
                     onCancel={handleCancel}
                     footer={() => (
                         <>
@@ -237,6 +253,56 @@ export default function Home() {
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold">
                         <CountdownTimer />
+                    </div>
+                </Modal>
+
+                <Modal
+                    open={helpOpen}
+                    closeIcon={customCloseIcon()}
+                    onOk={handleHelpOk}
+                    onCancel={handleHelpCancel}
+                    footer={() => <></>}
+                >
+                    <div className="text-2xl text-center text-primary-text font-bold mt-5 font-montserrat">
+                        How to play
+                    </div>
+                    <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
+                        Cinephidle is based on the top 1000 most popular films
+                        on <span style={{ color: "#ff6188" }}>Letterboxd</span>{" "}
+                        as of 2024.
+                    </div>
+                    <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
+                        You get 15 tries to guess the correct film.
+                    </div>
+                    <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
+                        Each guess reveals information about the the film you
+                        have to identify.
+                    </div>
+                    <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
+                        If a cell is{" "}
+                        <span style={{ color: "#32a852" }}>green</span>, it
+                        means that attribute matches to that of the film you
+                        have to identify.
+                    </div>
+                    <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
+                        If the cell containing the year is{" "}
+                        <span style={{ color: "#e3c56d" }}>yellow</span>, it
+                        means you are within five years of the target. Arrow
+                        pointing up means you have to go forward in time, arrow
+                        pointing down means you have to go back.
+                    </div>
+                    <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
+                        If the cell containing the rating is{" "}
+                        <span style={{ color: "#e3c56d" }}>yellow</span>, it
+                        means you are within 0.5 of the target. Arrow pointing
+                        up means you have to go higher, arrow pointing down
+                        means you have to go lower.
+                    </div>
+                    <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
+                        The game resets everyday at 12 AM.
+                    </div>
+                    <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
+                        Good luck!
                     </div>
                 </Modal>
             </ConfigProvider>
