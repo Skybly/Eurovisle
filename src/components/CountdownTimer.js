@@ -10,7 +10,6 @@ const CountdownTimer = () => {
             const timeRemaining = midnight.getTime() - now.getTime();
             setTimeUntilMidnight(timeRemaining);
             if (timeRemaining < 1000) {
-                console.log('Resetting at:', timeRemaining);
                 resetAll();
             }
         };
@@ -21,7 +20,6 @@ const CountdownTimer = () => {
     }, []);
 
     const resetAll = () => {
-        console.log('Reset triggered');
         localStorage.removeItem('films');
         localStorage.removeItem("gameOver");
         localStorage.removeItem("win");

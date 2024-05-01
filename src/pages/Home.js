@@ -63,23 +63,19 @@ export default function Home() {
         setInputValue("");
         const storedFilms = JSON.parse(localStorage.getItem("films") || "[]");
         const win = selectedFilm.Film_title === movie.Film_title;
-        if (storedFilms.length === 10) {
+        if (storedFilms.length === 15) {
             if (win) {
                 localStorage.setItem("win", JSON.stringify(true));
                 setWin(true);
                 localStorage.setItem("gameOver", JSON.stringify(true));
                 setGameOver(true);
                 showModal();
-                message.success("Correct guess on the 10th turn! Game over!");
             } else {
                 localStorage.setItem("win", JSON.stringify(false));
                 setWin(false);
                 localStorage.setItem("gameOver", JSON.stringify(true));
                 setGameOver(true);
                 showModal();
-                message.error(
-                    "Game over! You've reached 10 turns without a correct final guess."
-                );
             }
         } else {
             localStorage.setItem("win", JSON.stringify(win));
@@ -93,9 +89,6 @@ export default function Home() {
             }
         }
         selectFlag.current = true;
-        if (!win && storedFilms.length < 10) {
-            message.error("Wrong guess! Try again!");
-        }
     };
 
     const resultCopy = () => {
@@ -130,7 +123,6 @@ export default function Home() {
             const updatedFilms = [selectedFilm, ...storedFilms];
             localStorage.setItem("films", JSON.stringify(updatedFilms));
             setFilmsFromStorage(updatedFilms);
-            message.success("Guess entered!");
         } else {
             message.error("Film already guessed!");
         }
@@ -194,7 +186,7 @@ export default function Home() {
                             />
                         </div>
                         <div className="text-primary-text brightness-50">
-                            {filmsFromStorage.length}/10
+                            {filmsFromStorage.length}/15
                         </div>
                     </div>
                     <AutoComplete
