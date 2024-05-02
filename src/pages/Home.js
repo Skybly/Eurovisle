@@ -26,7 +26,9 @@ export default function Home() {
     const customCloseIcon = () => <CloseOutlined style={{color: 'aliceblue'}}/>;
 
     useEffect(() => {
-        if (gameOver) {
+        const lastVisitDate = localStorage.getItem('lastVisitDate');
+        const today = new Date().toDateString();
+        if (gameOver && lastVisitDate === today) {
             setOpen(true);
         }
     }, []);
