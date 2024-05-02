@@ -423,7 +423,7 @@
         "Director": "Lee Unkrich",
         "Cast": "Anthony Gonzalez",
         "Average_rating": 4.1,
-        "Genres": "Adventure",
+        "Genres": "Animation",
         "Countries": "USA",
         "Original_language": "English",
         "Film_key": "Coco"
@@ -599,7 +599,7 @@
         "Director": "Wes Anderson",
         "Cast": "George Clooney",
         "Average_rating": 4.3,
-        "Genres": "Family",
+        "Genres": "Animation",
         "Countries": "USA",
         "Original_language": "English",
         "Film_key": "Fantastic Mr. Fox"
@@ -841,7 +841,7 @@
         "Director": "Hayao Miyazaki",
         "Cast": "Chieko Baisho",
         "Average_rating": 4.3,
-        "Genres": "Fantasy",
+        "Genres": "Animation",
         "Countries": "Japan",
         "Original_language": "Japanese",
         "Film_key": "Howl's Moving Castle"
@@ -874,7 +874,7 @@
         "Director": "Pete Docter",
         "Cast": "Amy Poehler",
         "Average_rating": 3.8,
-        "Genres": "Comedy",
+        "Genres": "Animation",
         "Countries": "USA",
         "Original_language": "English",
         "Film_key": "Inside Out"
@@ -1116,7 +1116,7 @@
         "Director": "Pete Docter",
         "Cast": "John Goodman",
         "Average_rating": 4.1,
-        "Genres": "Comedy",
+        "Genres": "Animation",
         "Countries": "USA",
         "Original_language": "English",
         "Film_key": "Monsters, Inc."
@@ -1138,7 +1138,7 @@
         "Director": "Hayao Miyazaki",
         "Cast": "Noriko Hidaka",
         "Average_rating": 4.2,
-        "Genres": "Fantasy",
+        "Genres": "Animation",
         "Countries": "Japan",
         "Original_language": "Japanese",
         "Film_key": "My Neighbor Totoro"
@@ -1270,7 +1270,7 @@
         "Director": "Hayao Miyazaki",
         "Cast": "Youji Matsuda",
         "Average_rating": 4.4,
-        "Genres": "Adventure",
+        "Genres": "Animation",
         "Countries": "Japan",
         "Original_language": "Japanese",
         "Film_key": "Princess Mononoke"
@@ -1424,7 +1424,7 @@
         "Director": "Andrew Adamson, Vicky Jenson",
         "Cast": "Mike Myers",
         "Average_rating": 4.1,
-        "Genres": "Adventure",
+        "Genres": "Animation",
         "Countries": "USA",
         "Original_language": "English",
         "Film_key": "Shrek"
@@ -1446,7 +1446,7 @@
         "Director": "Pete Docter",
         "Cast": "Jamie Foxx",
         "Average_rating": 3.9,
-        "Genres": "Family",
+        "Genres": "Animation",
         "Countries": "USA",
         "Original_language": "English",
         "Film_key": "Soul"
@@ -1512,7 +1512,7 @@
         "Director": "Rodney Rothman, Peter Ramsey",
         "Cast": "Shameik Moore",
         "Average_rating": 4.4,
-        "Genres": "Adventure",
+        "Genres": "Animation",
         "Countries": "USA",
         "Original_language": "English",
         "Film_key": "Spider-Man: Into the Spider-Verse"
@@ -1534,7 +1534,7 @@
         "Director": "Hayao Miyazaki",
         "Cast": "Rumi Hiiragi",
         "Average_rating": 4.5,
-        "Genres": "Family",
+        "Genres": "Animation",
         "Countries": "Japan",
         "Original_language": "Japanese",
         "Film_key": "Spirited Away"
