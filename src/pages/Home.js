@@ -5,6 +5,7 @@ import films from "../data/150movies.json";
 import CountdownTimer from "../components/CountdownTimer";
 import GameContext from "../context/GameContext";
 import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
+import Footer from "../components/Footer";
 
 export default function Home() {
     const { movie } = useContext(GameContext);
@@ -298,6 +299,7 @@ export default function Home() {
                     </div>
                 </Modal>
             </ConfigProvider>
+            <Footer />
         </div>
     );
 }
