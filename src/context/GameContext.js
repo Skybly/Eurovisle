@@ -8,7 +8,7 @@ export const GameProvider = ({ children }) => {
     const [daysSince, setDaysSince] = useState();
 
     useEffect(() => {
-        const baseDate = new Date('2024-05-01T00:00:00');
+        const baseDate = new Date('2024-05-02T00:00:00');
 
         const calculateDaysSince = () => {
             const today = new Date();
