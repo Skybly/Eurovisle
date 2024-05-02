@@ -292,6 +292,10 @@ export default function Home() {
                         means you have to go lower.
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
+                        If a genre, language or country of origin doesn't make sense to you, 
+                        I can assure you that that is what Letterboxd assigns to that particular film.
+                    </div>
+                    <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
                         The game resets everyday at 12 AM.
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
