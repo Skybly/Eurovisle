@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Cinephidle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Cinephidle, a game influenced by the concept of [Wordle](https://www.nytimes.com/games/wordle/index.html), tailored for film enthusiasts. This game challenges players to guess popular films based on minimal clues, with a focus on the top 150 most popular films as listed on [Letterboxd](https://letterboxd.com/mattheuswc/list/top-1000-popular-films/). The game is inspired from a similar game based on music artists called [Spotle](https://spotle.io).
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+## What I Used
 
-### `npm start`
+| Tools      | Version |
+|------------|---------|
+| React      | 18.2.0  |
+| Ant Design | 5.16.2  |
+| Tailwind   | 3.4.3   |
+| Vercel     | -   |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Play
 
-### `npm test`
+Each day, a new film from the top 150 popular films on Letterboxd is picked as the puzzle of the day. Players are given fifteen attempts to guess the correct film. Clues provided include the year of release, genre, director, country the film is from, the name of the director, the name of the lead actor, average Letterboxd rating and the original language of the film. Each incorrect guess provides additional hints to help narrow down the possibilities.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+# Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* The game resets everyday at 12 AM.
+* The game is fully responsive, can be played on any device.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+This is if you want to run Cinephidle locally on your machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
+Before installing Cinephidle, ensure you have the following installed:
+* [Node.js](https://nodejs.org/en/download)
+* [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Cloning the Repository
+Open your terminal and run the following command to clone the repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/saadpocalypse/Cinephidle.git
+```
 
-## Learn More
+### Setting Up the Project
+Navigate into the project directory with:
+```bash
+cd Cinephidle
+```
+The install all the required dependancies with:
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Running the Game
+Once setup is complete, you can start the game locally with:
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Accessing the Game
+After starting the server, open your web browser and navigate to:
 
-### Code Splitting
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Replace 3000 with the actual port number where your project is running.
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to Contribute
+I appreciate any and all contributions to Cinephidle. Here's how you can do it:
 
-### Making a Progressive Web App
+### 1. Fork the Repository: 
+Start by forking the Cinephidle repository to your GitHub account.
+### 2. Clone Your Fork: 
+Clone your forked repository to your local machine.
+### 3. Create a Branch: 
+Create a branch for your new feature or bug fix.
+### 4. Make Your Changes: 
+Implement your feature or fix that bug.
+### 5. Commit Changes: 
+Commit your changes with a clear, concise commit message.
+### 6. Push to GitHub: 
+Push your changes to your fork on GitHub.
+### 7. Submit a Pull Request: 
+Open a pull request from your fork to the main Cinephidle repository.
+### 8. Wait: 
+Wait for me to review the changes and merge them if needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Cinephidle is open-source software licensed under the GNU Affero General Public License v3.0. See the [LICENSE](https://github.com/saadpocalypse/Cinephidle/blob/main/LICENSE) file for more details. I chose the GNU Affero General Public License v3.0 for Cinephidle because it requires anyone who modifies and redistributes it, especially in a networked environment, to also make their source code available under the same license, thus ensuring the game remains open source and free from ads, just like Cinephidle is.
 
-### Deployment
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Disclaimer
+**This project is for educational purposes only and is not a collaboration with any official film database or quiz platform. It is in no way affiliated with or endorsed by Wordle, Letterboxd or Spotle.**
