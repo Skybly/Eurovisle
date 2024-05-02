@@ -1,9 +1,22 @@
 import React, { useState, useEffect } from "react";
 
+const currentVersion = '1.0';
 const CountdownTimer = () => {
     const [timeUntilMidnight, setTimeUntilMidnight] = useState(0);
 
     useEffect(() => {
+        const checkVersionAndReset = () => {
+            const storedVersion = localStorage.getItem('version') || '0';
+            const today = new Date().toDateString();
+            const lastVisitDate = localStorage.getItem('lastVisitDate');
+
+            if (storedVersion !== currentVersion || lastVisitDate !== today) {
+                resetAll();
+            }
+            localStorage.setItem('version', currentVersion);
+            localStorage.setItem('lastVisitDate', today);
+        };
+
         const calculateTimeUntilMidnight = () => {
             const now = new Date();
             const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0);
@@ -14,9 +27,12 @@ const CountdownTimer = () => {
             }
         };
 
+        checkVersionAndReset();
         calculateTimeUntilMidnight();
         const timerId = setInterval(calculateTimeUntilMidnight, 1000);
-        return () => clearInterval(timerId);
+        return () => {
+            clearInterval(timerId);
+        };
     }, []);
 
     const resetAll = () => {
