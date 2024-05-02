@@ -95,7 +95,7 @@ export default function Guess({ guess }) {
                         Rating
                     </div>
                     <div className="text-xl font-poppins font-semibold text-center flex items-center justify-center gap-x-1">
-                        {guessRating}
+                        {guessRating.toFixed(1)}
                         {guessedRatingHigher !== null &&
                             (guessedRatingHigher ? (
                                 <ArrowDownOutlined />
