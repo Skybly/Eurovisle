@@ -102,7 +102,7 @@ export default function Home() {
         } else {
             result = result + wrongEmoji;
         }
-        result = result + "\n\nCinephidle.com";
+        result = result + "\n\ncinephidle.vercel.app";
         navigator.clipboard
             .writeText(result)
             .then(() => {
