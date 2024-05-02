@@ -2,6 +2,8 @@
 
 Welcome to Cinephidle, a game influenced by the concept of [Wordle](https://www.nytimes.com/games/wordle/index.html), tailored for film enthusiasts. This game challenges players to guess popular films based on minimal clues, with a focus on the top 150 most popular films as listed on [Letterboxd](https://letterboxd.com/mattheuswc/list/top-1000-popular-films/). The game is inspired from a similar game based on music artists called [Spotle](https://spotle.io).
 
+You can play Cinephidle [here](https://cinephidle.vercel.app).
+
 <br>
 
 ## What I Used
@@ -10,7 +12,7 @@ Welcome to Cinephidle, a game influenced by the concept of [Wordle](https://www.
 |------------|---------|
 | React      | 18.2.0  |
 | Ant Design | 5.16.2  |
-| Tailwind   | 3.4.3   |
+| Tailwind CSS   | 3.4.3   |
 | Vercel     | -   |
 
 <br>
