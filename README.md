@@ -52,7 +52,7 @@ Navigate into the project directory with:
 ```bash
 cd Cinephidle
 ```
-The install all the required dependancies with:
+Then install all the required dependancies with:
 ```bash
 npm install
 ```
