@@ -39,7 +39,6 @@ const CountdownTimer = () => {
 
     return (
         <div className="text-2xl font-semibold text-primary-text">
-            <button onClick={resetAll} className="text-2xl font-semibold text-primary-correct">Reset</button>
             {formatTime(timeUntilMidnight)}
         </div>
     );

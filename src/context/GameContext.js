@@ -19,7 +19,6 @@ export const GameProvider = ({ children }) => {
         const fetchMovieIndex = () => {
             const index = getMovieIndex();
             setMovie(movies[index]);
-            console.log(movies[index]);
         };
 
         const updateDaily = () => {
