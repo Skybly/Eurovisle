@@ -35,6 +35,7 @@ export default function Home() {
             localStorage.removeItem('films');
             localStorage.removeItem("gameOver");
             localStorage.removeItem("win");
+            localStorage.setItem('lastVisitDate', today);
         }
     }, []);
 
