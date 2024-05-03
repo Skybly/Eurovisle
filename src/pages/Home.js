@@ -4,7 +4,7 @@ import { AutoComplete, message, ConfigProvider, Modal, Button } from "antd";
 import films from "../data/150movies.json";
 import CountdownTimer from "../components/CountdownTimer";
 import GameContext from "../context/GameContext";
-import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
+import { QuestionCircleOutlined, CloseOutlined, EyeFilled } from "@ant-design/icons";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -33,9 +33,22 @@ export default function Home() {
         }
     }, []);
 
+    useEffect(() => {
+        const lastVisitDate = localStorage.getItem('lastVisitDate');
+        const version = localStorage.getItem('version');
+        if (!lastVisitDate){
+            localStorage.setItem('lastVisitDate', new Date().toDateString());
+        }
+        if (!version){
+            localStorage.setItem('version', '1.0');
+        }
+    }, []);
+
     const showModal = () => {
         setOpen(true);
     };
+
+    
     const handleOk = () => {
         setOpen(false);
     };

@@ -1,3 +1,4 @@
+import { message } from "antd";
 import React, { useState, useEffect } from "react";
 
 const currentVersion = '1.0';
@@ -13,6 +14,7 @@ const CountdownTimer = () => {
             if (storedVersion !== currentVersion || lastVisitDate !== today) {
                 resetAll();
             }
+
             localStorage.setItem('version', currentVersion);
             localStorage.setItem('lastVisitDate', today);
         };
