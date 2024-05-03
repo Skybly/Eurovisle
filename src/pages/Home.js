@@ -31,6 +31,11 @@ export default function Home() {
         if (gameOver && lastVisitDate === today) {
             setOpen(true);
         }
+        if (lastVisitDate !== today) {
+            localStorage.removeItem('films');
+            localStorage.removeItem("gameOver");
+            localStorage.removeItem("win");
+        }
     }, []);
 
     useEffect(() => {

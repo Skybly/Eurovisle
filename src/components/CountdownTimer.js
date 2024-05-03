@@ -9,11 +9,9 @@ const CountdownTimer = () => {
             const storedVersion = localStorage.getItem('version') || '0';
             const today = new Date().toDateString();
             const lastVisitDate = localStorage.getItem('lastVisitDate');
-
             if (storedVersion !== currentVersion || lastVisitDate !== today) {
                 resetAll();
             }
-
             localStorage.setItem('version', currentVersion);
             localStorage.setItem('lastVisitDate', today);
         };
@@ -34,6 +32,7 @@ const CountdownTimer = () => {
         return () => {
             clearInterval(timerId);
         };
+        
     }, []);
 
     const resetAll = () => {
