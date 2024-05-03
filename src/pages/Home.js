@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import Guess from "../components/Guess";
-import { AutoComplete, message, ConfigProvider, Modal, Button } from "antd";
+import { AutoComplete, message, ConfigProvider, Modal } from "antd";
 import films from "../data/150movies.json";
 import CountdownTimer from "../components/CountdownTimer";
 import GameContext from "../context/GameContext";
-import { QuestionCircleOutlined, CloseOutlined, EyeFilled } from "@ant-design/icons";
+import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
 import Footer from "../components/Footer";
 
 export default function Home() {

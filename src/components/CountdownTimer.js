@@ -1,4 +1,3 @@
-import { message } from "antd";
 import React, { useState, useEffect } from "react";
 
 const currentVersion = '1.0';
