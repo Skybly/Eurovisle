@@ -123,7 +123,7 @@ export default function Horror() {
     };
 
     const resultCopy = () => {
-        let result = "Cinephidle Horror #" + daysSince + " 🎬\n\n";
+        let result = "Cinephidle Horror #" + daysSince + " 🧟‍♀️\n\n";
         const guesses = filmsFromStorage.length - 1;
         for (let i = 0; i < guesses; i++) {
             result = result + wrongEmoji;
