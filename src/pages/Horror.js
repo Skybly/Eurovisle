@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import Guess from "../components/Guess";
 import { AutoComplete, message, ConfigProvider, Modal } from "antd";
-import films from "../data/150movies.json";
-import CountdownTimer from "../components/CountdownTimer";
+import films from "../data/horror.json";
+import CountdownTimerHorror from "../components/CountdownTimerHorror";
 import GameContext from "../context/GameContext";
 import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
 import Footer from "../components/Footer";
 
 export default function Horror() {
-    const { movie } = useContext(GameContext);
+    const { horrorMovie } = useContext(GameContext);
     const { daysSince } = useContext(GameContext);
     const wrongEmoji = "⬜️";
     const correctEmoji = "🟩";
@@ -83,9 +83,9 @@ export default function Horror() {
         const selectedFilm = films.find((film) => film.Film_title === value);
         saveToLocal(selectedFilm);
         setInputValue("");
-        const storedFilms = JSON.parse(localStorage.getItem("films") || "[]");
-        const win = selectedFilm.Film_title === movie.Film_title;
-        if (storedFilms.length === 15) {
+        const storedFilms = JSON.parse(localStorage.getItem("horrorFilms") || "[]");
+        const win = selectedFilm.Film_title === horrorMovie.Film_title;
+        if (storedFilms.length === 10) {
             if (win) {
                 localStorage.setItem("horrorWin", JSON.stringify(true));
                 setWin(true);
@@ -100,7 +100,7 @@ export default function Horror() {
                 showModal();
             }
         } else {
-            localStorage.setItem("win", JSON.stringify(win));
+            localStorage.setItem("horrorWin", JSON.stringify(win));
             if (win) {
                 localStorage.setItem("horrorGameOver", JSON.stringify(true));
                 setWin(win);
@@ -157,7 +157,7 @@ export default function Horror() {
                     film.Film_title.toLowerCase() === inputValue.toLowerCase()
             );
             if (!film && !selectFlag.current) {
-                message.error("Film not in top 150 horror!");
+                message.error("Film not in top 100 horror!");
             }
             setInputValue("");
             selectFlag.current = false;
@@ -208,7 +208,7 @@ export default function Horror() {
                             />
                         </div>
                         <div className="text-primary-text brightness-50">
-                            {filmsFromStorage.length}/15
+                            {filmsFromStorage.length}/10
                         </div>
                     </div>
                     <AutoComplete
@@ -259,14 +259,14 @@ export default function Horror() {
                     <div className="text-lg text-center text-primary-text font-semibold mt-10">
                         Today's horror film is{" "}
                         <span className="text-primary-partial">
-                            {movie.Film_title}!
+                            {horrorMovie.Film_title}!
                         </span>
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-14">
                         Next Cinephidle Horror round starts in
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold">
-                        <CountdownTimer />
+                        <CountdownTimerHorror />
                     </div>
                 </Modal>
 
@@ -281,12 +281,12 @@ export default function Horror() {
                         How to play
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
-                        Cinephidle Horror is based on the top 150 most popular horror films
+                        Cinephidle Horror is based on the top 100 most popular horror films
                         on <span style={{ color: "#ff6188" }}>Letterboxd</span>{" "}
                         as of 2024.
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
-                        You get 15 tries to guess the correct horror film.
+                        You get 10 tries to guess the correct horror film.
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
                         Each guess reveals information about the the film you

@@ -1,10 +1,12 @@
 import React, { createContext, useState, useEffect } from "react";
 import movies from "../data/150movies.json";
+import horrorMovies from "../data/horror.json";
 
 const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
     const [movie, setMovie] = useState({});
+    const [horrorMovie, setHorrorMovie] = useState({});
     const [daysSince, setDaysSince] = useState();
 
     useEffect(() => {
@@ -21,8 +23,14 @@ export const GameProvider = ({ children }) => {
             setMovie(movies[index]);
         };
 
+        const fetchHorrorMoveIndex = () => {
+            const index = getHorrorIndex();
+            setHorrorMovie(horrorMovies[index]);
+        };
+
         const updateDaily = () => {
             fetchMovieIndex();
+            fetchHorrorMoveIndex();
             setDaysSince(calculateDaysSince());
         };
 
@@ -48,6 +56,15 @@ export const GameProvider = ({ children }) => {
         return numericValue;
     };
 
+    const getHorrorIndex = () => {
+        const today = new Date();
+        let numericValue = today.getFullYear() * 5803 + (today.getMonth() + 1) * 241 + today.getDate();
+        while (numericValue > 99) {
+            numericValue -= 100;
+        }
+        return numericValue;
+    };
+
     const getMidnightTime = () => {
         const today = new Date();
         const midnight = new Date(today);
@@ -56,7 +73,7 @@ export const GameProvider = ({ children }) => {
     };
 
     return (
-        <GameContext.Provider value={{ movie, daysSince }}>
+        <GameContext.Provider value={{ movie, daysSince, horrorMovie }}>
             {children}
         </GameContext.Provider>
     );
