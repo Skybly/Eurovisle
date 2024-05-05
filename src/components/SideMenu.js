@@ -11,8 +11,8 @@ class SideMenu extends React.Component {
                 position: "fixed",
                 width: "25px",
                 height: "20px",
-                left: "36px",
-                top: "36px",
+                left: "20px",
+                top: "52px",
             },
             bmBurgerBars: {
                 borderRadius: "100px",
