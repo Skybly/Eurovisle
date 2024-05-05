@@ -133,7 +133,7 @@ export default function Horror() {
         } else {
             result = result + wrongEmoji;
         }
-        result = result + "\n\ncinephidle.vercel.app";
+        result = result + "\n\ncinephidle.vercel.app/horror";
         navigator.clipboard
             .writeText(result)
             .then(() => {
