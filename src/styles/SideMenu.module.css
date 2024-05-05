@@ -1,0 +1,14 @@
+.item{
+    transition: 0.2s all linear;
+    color: #849192;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item:hover{
+    color: #E4FAFB;
+}
+
+.activeItem{
+    color: #E4FAFB;
+    cursor: pointer;
+}

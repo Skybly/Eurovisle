@@ -6,6 +6,7 @@ import CountdownTimerHorror from "../components/CountdownTimerHorror";
 import GameContext from "../context/GameContext";
 import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
 import Footer from "../components/Footer";
+import SideMenu from "../components/SideMenu";
 
 export default function Horror() {
     const { horrorMovie } = useContext(GameContext);
@@ -23,30 +24,35 @@ export default function Horror() {
     );
     const [open, setOpen] = useState(false);
     const [helpOpen, setHelpOpen] = useState(false);
-    const customCloseIcon = () => <CloseOutlined style={{color: 'aliceblue'}}/>;
+    const customCloseIcon = () => (
+        <CloseOutlined style={{ color: "aliceblue" }} />
+    );
 
     useEffect(() => {
-        const lastVisitDate = localStorage.getItem('horrorLastVisitDate');
+        const lastVisitDate = localStorage.getItem("horrorLastVisitDate");
         const today = new Date().toDateString();
         if (gameOver && lastVisitDate === today) {
             setOpen(true);
         }
         if (lastVisitDate !== today) {
-            localStorage.removeItem('horrorFilms');
+            localStorage.removeItem("horrorFilms");
             localStorage.removeItem("horrorGameOver");
             localStorage.removeItem("horrorWin");
-            localStorage.setItem('horrorLastVisitDate', today);
+            localStorage.setItem("horrorLastVisitDate", today);
         }
     }, []);
 
     useEffect(() => {
-        const lastVisitDate = localStorage.getItem('horrorLastVisitDate');
-        const version = localStorage.getItem('horrorVersion');
-        if (!lastVisitDate){
-            localStorage.setItem('horrorLastVisitDate', new Date().toDateString());
+        const lastVisitDate = localStorage.getItem("horrorLastVisitDate");
+        const version = localStorage.getItem("horrorVersion");
+        if (!lastVisitDate) {
+            localStorage.setItem(
+                "horrorLastVisitDate",
+                new Date().toDateString()
+            );
         }
-        if (!version){
-            localStorage.setItem('horrorVersion', '1.0');
+        if (!version) {
+            localStorage.setItem("horrorVersion", "1.0");
         }
     }, []);
 
@@ -54,7 +60,6 @@ export default function Horror() {
         setOpen(true);
     };
 
-    
     const handleOk = () => {
         setOpen(false);
     };
@@ -75,7 +80,9 @@ export default function Horror() {
         (option?.value ?? "").toLowerCase().includes(input.toLowerCase());
 
     useEffect(() => {
-        const storedFilms = JSON.parse(localStorage.getItem("horrorFilms") || "[]");
+        const storedFilms = JSON.parse(
+            localStorage.getItem("horrorFilms") || "[]"
+        );
         setFilmsFromStorage(storedFilms);
     }, []);
 
@@ -83,7 +90,9 @@ export default function Horror() {
         const selectedFilm = films.find((film) => film.Film_title === value);
         saveToLocal(selectedFilm);
         setInputValue("");
-        const storedFilms = JSON.parse(localStorage.getItem("horrorFilms") || "[]");
+        const storedFilms = JSON.parse(
+            localStorage.getItem("horrorFilms") || "[]"
+        );
         const win = selectedFilm.Film_title === horrorMovie.Film_title;
         if (storedFilms.length === 10) {
             if (win) {
@@ -136,7 +145,9 @@ export default function Horror() {
     };
 
     const saveToLocal = (selectedFilm) => {
-        const storedFilms = JSON.parse(localStorage.getItem("horrorFilms") || "[]");
+        const storedFilms = JSON.parse(
+            localStorage.getItem("horrorFilms") || "[]"
+        );
         if (
             !storedFilms.some(
                 (film) => film.Film_title === selectedFilm.Film_title
@@ -167,9 +178,19 @@ export default function Horror() {
 
     return (
         <div className="flex flex-col items-center h-screen justify-end gap-y-1v pt-5">
+            <div
+                style={{
+                    position: "absolute",
+                    zIndex: "99",
+                    top: "0",
+                    left: "0",
+                }}
+            >
+                <SideMenu page={"horror"} />
+            </div>
             <div className="h-20 flex flex-col items-center justify-center">
                 <img
-                    src="/static/images/Name.svg"
+                    src="/static/images/NameHorror.svg"
                     alt="name"
                     style={{ height: "300px" }}
                 ></img>
@@ -281,9 +302,10 @@ export default function Horror() {
                         How to play
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
-                        Cinephidle Horror is based on the top 100 most popular horror films
-                        on <span style={{ color: "#ff6188" }}>Letterboxd</span>{" "}
-                        as of 2024.
+                        Cinephidle Horror is based on the top 100 most popular
+                        horror films on{" "}
+                        <span style={{ color: "#ff6188" }}>Letterboxd</span> as
+                        of 2024.
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
                         You get 10 tries to guess the correct horror film.

@@ -6,6 +6,7 @@ import CountdownTimer from "../components/CountdownTimer";
 import GameContext from "../context/GameContext";
 import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
 import Footer from "../components/Footer";
+import SideMenu from "../components/SideMenu";
 
 export default function Home() {
     const { movie } = useContext(GameContext);
@@ -167,6 +168,9 @@ export default function Home() {
 
     return (
         <div className="flex flex-col items-center h-screen justify-end gap-y-1v pt-5">
+            <div style={{position: 'absolute', zIndex: '99', top: '0', left: '0'}}>
+                <SideMenu page = {'home'}/>
+            </div>
             <div className="h-20 flex flex-col items-center justify-center">
                 <img
                     src="/static/images/Name.svg"
@@ -174,6 +178,7 @@ export default function Home() {
                     style={{ height: "300px" }}
                 ></img>
             </div>
+            
             <ConfigProvider
                 theme={{
                     components: {
