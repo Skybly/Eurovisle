@@ -27,7 +27,7 @@ Each day, a new film from the top 150 popular films on Letterboxd is picked as t
 
 * The game resets everyday at 12 AM.
 * The game is fully responsive, can be played on any device.
-* I have also added a horror mode, where you have to guess a movie out of [top 100 most popular horror](https://letterboxd.com/believememaizey/list/100-most-popular-horror-movies-on-letterboxd/) films on Letterboxd.
+* I have also added a horror mode, where you have to guess a movie out of the [top 100 most popular horror](https://letterboxd.com/believememaizey/list/100-most-popular-horror-movies-on-letterboxd/) films on Letterboxd.
 
 <br>
 
