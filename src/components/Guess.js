@@ -3,13 +3,15 @@ import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
 import GameContext from '../context/GameContext';
 
 export default function Guess({ guess }) {
-    const { horrorMovie: actualAnswer } = useContext(GameContext);
+    const { movie: actualAnswer } = useContext(GameContext);
     const {
         Film_title: guessTitle,
         Release_year: guessYear,
         Director: guessDirector,
         Cast: guessCast,
         Average_rating: guessRating,
+        Genres: guessGenre,
+        Countries: guessCountry,
         Original_language: guessLanguage,
     } = guess;
 
@@ -18,11 +20,15 @@ export default function Guess({ guess }) {
         Director: correctDirector,
         Cast: correctCast,
         Average_rating: correctRating,
+        Genres: correctGenres,
+        Countries: correctCountries,
         Original_language: correctLanguage,
     } = actualAnswer;
 
     const directorCorrect = guessDirector === correctDirector;
     const castCorrect = guessCast === correctCast;
+    const genreCorrect = guessGenre === correctGenres;
+    const countryCorrect = guessCountry === correctCountries;
     const languageCorrect = guessLanguage === correctLanguage;
     const yearDiff = Math.abs(guessYear - correctYear);
     const guessedYearHigher =
@@ -101,6 +107,19 @@ export default function Guess({ guess }) {
                 <div
                     className="p-2 rounded-md w-32"
                     style={{
+                        background: genreCorrect ? "#418243" : "#29282B",
+                    }}
+                >
+                    <div className="text-lg font-montserrat font-semibold text-center">
+                        Genre
+                    </div>
+                    <div className="text-xl font-poppins font-semibold text-center">
+                        {guessGenre}
+                    </div>
+                </div>
+                <div
+                    className="p-2 rounded-md w-32"
+                    style={{
                         background: languageCorrect ? "#418243" : "#29282B",
                     }}
                 >
@@ -113,6 +132,21 @@ export default function Guess({ guess }) {
                 </div>
             </div>
 
+            <div className="flex gap-x-1 text-primary-innertext">
+                <div
+                    className="p-2 rounded-md min-w-32"
+                    style={{
+                        background: countryCorrect ? "#418243" : "#29282B",
+                    }}
+                >
+                    <div className="text-lg font-montserrat font-semibold text-center">
+                        Country
+                    </div>
+                    <div className="text-xl font-poppins font-semibold text-center">
+                        {guessCountry}
+                    </div>
+                </div>
+            </div>
             <div className="flex gap-x-1 text-primary-innertext">
                 <div
                     className="rounded-md min-w-32 py-2 px-4"

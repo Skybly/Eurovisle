@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
-import Guess from "../components/Guess";
+import GuessHorror from "../components/GuessHorror";
 import { AutoComplete, message, ConfigProvider, Modal } from "antd";
 import films from "../data/horror.json";
 import CountdownTimerHorror from "../components/CountdownTimerHorror";
@@ -252,7 +252,7 @@ export default function Horror() {
                         Open Modal
                     </Button> */}
                     {filmsFromStorage.map((film) => (
-                        <Guess key={film.Film_title} guess={film} />
+                        <GuessHorror key={film.Film_title} guess={film} />
                     ))}
                 </div>
                 <Modal
