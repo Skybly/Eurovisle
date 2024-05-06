@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
-import Comedy from "./pages/Comedy";
+import Romance from "./pages/Romance";
 import Horror from "./pages/Horror";
 import Animation from "./pages/Animation";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -14,7 +14,7 @@ function App() {
                 <Analytics />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/comedy" element={<Comedy />} />
+                    <Route path="/romance" element={<Romance />} />
                     <Route path="/horror" element={<Horror />} />
                     <Route path="/animation" element={<Animation />} />
                 </Routes>

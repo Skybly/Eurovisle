@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
 import GameContext from '../context/GameContext';
 
-export default function GuessHorror({ guess }) {
-    const { horrorMovie: actualAnswer } = useContext(GameContext);
+export default function GuessRomance({ guess }) {
+    const { romanceMovie: actualAnswer } = useContext(GameContext);
     const {
         Film_title: guessTitle,
         Release_year: guessYear,
