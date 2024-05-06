@@ -54,6 +54,12 @@ export default function Romance() {
         if (!version) {
             localStorage.setItem("romanceVersion", "1.2");
         }
+        if (version !== '1.2') {
+            localStorage.setItem('version', '1.2');
+            localStorage.removeItem("romanceFilms");
+            localStorage.removeItem("romanceGameOver");
+            localStorage.removeItem("romanceWin");
+        }
     }, []);
 
     const showModal = () => {

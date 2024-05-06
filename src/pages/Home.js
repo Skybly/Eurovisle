@@ -49,6 +49,12 @@ export default function Home() {
         if (!version){
             localStorage.setItem('version', '1.2');
         }
+        if (version !== '1.2') {
+            localStorage.removeItem('films');
+            localStorage.removeItem("gameOver");
+            localStorage.removeItem("win");
+            localStorage.setItem('version', '1.2');
+        }
     }, []);
 
     const showModal = () => {

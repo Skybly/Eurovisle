@@ -54,6 +54,12 @@ export default function Women() {
         if (!version) {
             localStorage.setItem("womenVersion", "1.2");
         }
+        if (version !== '1.2') {
+            localStorage.setItem('version', '1.2');
+            localStorage.removeItem('womenFilms');
+            localStorage.removeItem("womenGameOver");
+            localStorage.removeItem("womenWin");
+        }
     }, []);
 
     const showModal = () => {

@@ -54,6 +54,12 @@ export default function Horror() {
         if (!version) {
             localStorage.setItem("horrorVersion", "1.2");
         }
+        if (version !== '1.2') {
+            localStorage.removeItem("horrorFilms");
+            localStorage.removeItem("horrorGameOver");
+            localStorage.removeItem("horrorWin");
+            localStorage.setItem("horrorVersion", "1.2");
+        }
     }, []);
 
     const showModal = () => {
