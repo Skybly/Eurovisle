@@ -52,7 +52,7 @@ export default function Women() {
             );
         }
         if (!version) {
-            localStorage.setItem("womenVersion", "1.0");
+            localStorage.setItem("womenVersion", "1.1");
         }
     }, []);
 

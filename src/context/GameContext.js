@@ -65,7 +65,9 @@ export const GameProvider = ({ children }) => {
 
     const getMovieIndex = () => {
         const today = new Date();
-        let numericValue = today.getFullYear() * 5803 + (today.getMonth() + 1) * 241 + today.getDate();
+        const randomNumberOne = Math.floor(Math.random() * 10000) + 1;
+        const randomNumberTwo = Math.floor(Math.random() * 10000) + 1;
+        let numericValue = today.getFullYear() * randomNumberOne + (today.getMonth() + 1) * randomNumberTwo + today.getDate();
         while (numericValue > 149) {
             numericValue -= 150;
         }
@@ -74,7 +76,9 @@ export const GameProvider = ({ children }) => {
 
     const getHorrorIndex = () => {
         const today = new Date();
-        let numericValue = today.getFullYear() * 5803 + (today.getMonth() + 1) * 241 + today.getDate();
+        const randomNumberOne = Math.floor(Math.random() * 10000) + 1;
+        const randomNumberTwo = Math.floor(Math.random() * 10000) + 1;
+        let numericValue = today.getFullYear() * randomNumberOne + (today.getMonth() + 1) * randomNumberTwo + today.getDate();
         while (numericValue > 99) {
             numericValue -= 100;
         }
@@ -83,7 +87,9 @@ export const GameProvider = ({ children }) => {
 
     const getRomanceIndex = () => {
         const today = new Date();
-        let numericValue = today.getFullYear() * 5803 + (today.getMonth() + 1) * 241 + today.getDate();
+        const randomNumberOne = Math.floor(Math.random() * 10000) + 1;
+        const randomNumberTwo = Math.floor(Math.random() * 10000) + 1;
+        let numericValue = today.getFullYear() * randomNumberOne + (today.getMonth() + 1) * randomNumberTwo + today.getDate();
         while (numericValue > 99) {
             numericValue -= 100;
         }
@@ -92,7 +98,9 @@ export const GameProvider = ({ children }) => {
 
     const getWomenIndex = () => {
         const today = new Date();
-        let numericValue = today.getFullYear() * 5803 + (today.getMonth() + 1) * 241 + today.getDate();
+        const randomNumberOne = Math.floor(Math.random() * 10000) + 1;
+        const randomNumberTwo = Math.floor(Math.random() * 10000) + 1;
+        let numericValue = today.getFullYear() * randomNumberOne + (today.getMonth() + 1) * randomNumberTwo + today.getDate();
         while (numericValue > 99) {
             numericValue -= 100;
         }

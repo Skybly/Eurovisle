@@ -52,7 +52,7 @@ export default function Romance() {
             );
         }
         if (!version) {
-            localStorage.setItem("romanceVersion", "1.0");
+            localStorage.setItem("romanceVersion", "1.1");
         }
     }, []);
 
