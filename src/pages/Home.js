@@ -41,19 +41,16 @@ export default function Home() {
     }, []);
 
     useEffect(() => {
-        const lastVisitDate = localStorage.getItem('lastVisitDate');
-        const version = localStorage.getItem('version');
-        if (!lastVisitDate){
-            localStorage.setItem('lastVisitDate', new Date().toDateString());
+        const lastVisitDate = localStorage.getItem("lastVisitDate");
+        const version = localStorage.getItem("version");
+        if (!lastVisitDate) {
+            localStorage.setItem("lastVisitDate", new Date().toDateString());
         }
-        if (!version){
-            localStorage.setItem('version', '1.2');
-        }
-        if (version !== '1.2') {
-            localStorage.removeItem('films');
+        if (!version || version !== "1.2") {
+            localStorage.setItem("version", "1.2");
+            localStorage.removeItem("films");
             localStorage.removeItem("gameOver");
             localStorage.removeItem("win");
-            localStorage.setItem('version', '1.2');
         }
     }, []);
 

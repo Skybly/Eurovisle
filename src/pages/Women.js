@@ -46,17 +46,11 @@ export default function Women() {
         const lastVisitDate = localStorage.getItem("womenLastVisitDate");
         const version = localStorage.getItem("womenVersion");
         if (!lastVisitDate) {
-            localStorage.setItem(
-                "womenLastVisitDate",
-                new Date().toDateString()
-            );
+            localStorage.setItem("womenLastVisitDate", new Date().toDateString());
         }
-        if (!version) {
+        if (!version || version !== "1.2") {
             localStorage.setItem("womenVersion", "1.2");
-        }
-        if (version !== '1.2') {
-            localStorage.setItem('version', '1.2');
-            localStorage.removeItem('womenFilms');
+            localStorage.removeItem("womenFilms");
             localStorage.removeItem("womenGameOver");
             localStorage.removeItem("womenWin");
         }

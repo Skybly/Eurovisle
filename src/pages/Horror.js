@@ -46,19 +46,13 @@ export default function Horror() {
         const lastVisitDate = localStorage.getItem("horrorLastVisitDate");
         const version = localStorage.getItem("horrorVersion");
         if (!lastVisitDate) {
-            localStorage.setItem(
-                "horrorLastVisitDate",
-                new Date().toDateString()
-            );
+            localStorage.setItem("horrorLastVisitDate", new Date().toDateString());
         }
-        if (!version) {
+        if (!version || version !== "1.2") {
             localStorage.setItem("horrorVersion", "1.2");
-        }
-        if (version !== '1.2') {
             localStorage.removeItem("horrorFilms");
             localStorage.removeItem("horrorGameOver");
             localStorage.removeItem("horrorWin");
-            localStorage.setItem("horrorVersion", "1.2");
         }
     }, []);
 
