@@ -52,7 +52,7 @@ export default function Horror() {
             );
         }
         if (!version) {
-            localStorage.setItem("horrorVersion", "1.1");
+            localStorage.setItem("horrorVersion", "1.2");
         }
     }, []);
 

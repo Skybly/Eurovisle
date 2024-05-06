@@ -12,6 +12,9 @@ export const GameProvider = ({ children }) => {
     const [womenMovie, setWomenMovie] = useState({});
     const [romanceMovie, setRomanceMovie] = useState({});
     const [daysSince, setDaysSince] = useState();
+    const a = 48271;
+    const c = 21;
+    const today = new Date();
 
     useEffect(() => {
         const baseDate = new Date('2024-05-02T00:00:00');
@@ -64,46 +67,30 @@ export const GameProvider = ({ children }) => {
     }, []);
 
     const getMovieIndex = () => {
-        const today = new Date();
-        const randomNumberOne = Math.floor(Math.random() * 10000) + 1;
-        const randomNumberTwo = Math.floor(Math.random() * 10000) + 1;
-        let numericValue = today.getFullYear() * randomNumberOne + (today.getMonth() + 1) * randomNumberTwo + today.getDate();
-        while (numericValue > 149) {
-            numericValue -= 150;
-        }
+        const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+        const m = 150;
+        let numericValue = (a * seed + c) % m;
         return numericValue;
     };
 
     const getHorrorIndex = () => {
-        const today = new Date();
-        const randomNumberOne = Math.floor(Math.random() * 10000) + 1;
-        const randomNumberTwo = Math.floor(Math.random() * 10000) + 1;
-        let numericValue = today.getFullYear() * randomNumberOne + (today.getMonth() + 1) * randomNumberTwo + today.getDate();
-        while (numericValue > 99) {
-            numericValue -= 100;
-        }
+        const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+        const m = 100;
+        let numericValue = (a * seed + c) % m;
         return numericValue;
     };
 
     const getRomanceIndex = () => {
-        const today = new Date();
-        const randomNumberOne = Math.floor(Math.random() * 10000) + 1;
-        const randomNumberTwo = Math.floor(Math.random() * 10000) + 1;
-        let numericValue = today.getFullYear() * randomNumberOne + (today.getMonth() + 1) * randomNumberTwo + today.getDate();
-        while (numericValue > 99) {
-            numericValue -= 100;
-        }
+        const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+        const m = 100;
+        let numericValue = (a * seed + c) % m;
         return numericValue;
     };
 
     const getWomenIndex = () => {
-        const today = new Date();
-        const randomNumberOne = Math.floor(Math.random() * 10000) + 1;
-        const randomNumberTwo = Math.floor(Math.random() * 10000) + 1;
-        let numericValue = today.getFullYear() * randomNumberOne + (today.getMonth() + 1) * randomNumberTwo + today.getDate();
-        while (numericValue > 99) {
-            numericValue -= 100;
-        }
+        const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+        const m = 100;
+        let numericValue = (a * seed + c) % m;
         return numericValue;
     };
 

@@ -47,7 +47,7 @@ export default function Home() {
             localStorage.setItem('lastVisitDate', new Date().toDateString());
         }
         if (!version){
-            localStorage.setItem('version', '1.1');
+            localStorage.setItem('version', '1.2');
         }
     }, []);
 

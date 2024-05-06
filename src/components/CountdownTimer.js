@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const currentVersion = '1.1';
+const currentVersion = '1.2';
 const CountdownTimer = () => {
     const [timeUntilMidnight, setTimeUntilMidnight] = useState(0);
 
