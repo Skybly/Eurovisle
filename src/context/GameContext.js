@@ -2,12 +2,14 @@ import React, { createContext, useState, useEffect } from "react";
 import movies from "../data/150movies.json";
 import horrorMovies from "../data/horror.json";
 import romanceMovies from "../data/romance.json";
+import womenMovies from "../data/women.json";
 
 const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
     const [movie, setMovie] = useState({});
     const [horrorMovie, setHorrorMovie] = useState({});
+    const [womenMovie, setWomenMovie] = useState({});
     const [romanceMovie, setRomanceMovie] = useState({});
     const [daysSince, setDaysSince] = useState();
 
@@ -30,15 +32,21 @@ export const GameProvider = ({ children }) => {
             setHorrorMovie(horrorMovies[index]);
         };
 
-        const fetchRomanceMoveIndex = () => {
+        const fetchRomanceMovieIndex = () => {
             const index = getRomanceIndex();
             setRomanceMovie(romanceMovies[index]);
+        };
+
+        const fetchWomenMovieIndex = () => {
+            const index = getWomenIndex();
+            setWomenMovie(womenMovies[index]);
         };
 
         const updateDaily = () => {
             fetchMovieIndex();
             fetchHorrorMoveIndex();
-            fetchRomanceMoveIndex();
+            fetchRomanceMovieIndex();
+            fetchWomenMovieIndex();
             setDaysSince(calculateDaysSince());
         };
 
@@ -82,6 +90,15 @@ export const GameProvider = ({ children }) => {
         return numericValue;
     };
 
+    const getWomenIndex = () => {
+        const today = new Date();
+        let numericValue = today.getFullYear() * 5803 + (today.getMonth() + 1) * 241 + today.getDate();
+        while (numericValue > 99) {
+            numericValue -= 100;
+        }
+        return numericValue;
+    };
+
     const getMidnightTime = () => {
         const today = new Date();
         const midnight = new Date(today);
@@ -90,7 +107,7 @@ export const GameProvider = ({ children }) => {
     };
 
     return (
-        <GameContext.Provider value={{ movie, daysSince, horrorMovie, romanceMovie }}>
+        <GameContext.Provider value={{ movie, daysSince, horrorMovie, romanceMovie, womenMovie }}>
             {children}
         </GameContext.Provider>
     );

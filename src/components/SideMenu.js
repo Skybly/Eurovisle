@@ -63,6 +63,9 @@ class SideMenu extends React.Component {
         if (page === "romance") {
             baseStyles.bmBurgerBars.background = "#ff6188";
         }
+        if (page === "women") {
+            baseStyles.bmBurgerBars.background = "#F6B9C8";
+        }
 
         return (
             <Menu styles={baseStyles}>
@@ -92,6 +95,15 @@ class SideMenu extends React.Component {
                     }
                 >
                     Romance
+                </a>
+                <a
+                    href="/women"
+                    style={{ width: "fit-content" }}
+                    className={
+                        page === "women" ? styles.activeItem : styles.item
+                    }
+                >
+                    By Women
                 </a>
             </Menu>
         );

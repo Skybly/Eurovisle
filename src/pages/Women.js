@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
-import GuessRomance from "../components/GuessRomance";
+import GuessWomen from "../components/GuessWomen";
 import { AutoComplete, message, ConfigProvider, Modal } from "antd";
-import films from "../data/romance.json";
-import CountdownTimerRomance from "../components/CountdownTimerRomance";
+import films from "../data/women.json";
+import CountdownTimerWomen from "../components/CountdownTimerWomen";
 import GameContext from "../context/GameContext";
 import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
 import Footer from "../components/Footer";
 import SideMenu from "../components/SideMenu";
 
-export default function Romance() {
-    const { romanceMovie } = useContext(GameContext);
+export default function Women() {
+    const { womenMovie } = useContext(GameContext);
     const { daysSince } = useContext(GameContext);
     const wrongEmoji = "⬜️";
     const correctEmoji = "🟩";
@@ -17,10 +17,10 @@ export default function Romance() {
     const [filmsFromStorage, setFilmsFromStorage] = useState([]);
     const selectFlag = useRef(false);
     const [gameOver, setGameOver] = useState(
-        JSON.parse(localStorage.getItem("romanceGameOver") || "false")
+        JSON.parse(localStorage.getItem("womenGameOver") || "false")
     );
     const [win, setWin] = useState(
-        JSON.parse(localStorage.getItem("romanceWin") || "false")
+        JSON.parse(localStorage.getItem("womenWin") || "false")
     );
     const [open, setOpen] = useState(false);
     const [helpOpen, setHelpOpen] = useState(false);
@@ -29,30 +29,30 @@ export default function Romance() {
     );
 
     useEffect(() => {
-        const lastVisitDate = localStorage.getItem("romanceLastVisitDate");
+        const lastVisitDate = localStorage.getItem("womenLastVisitDate");
         const today = new Date().toDateString();
         if (gameOver && lastVisitDate === today) {
             setOpen(true);
         }
         if (lastVisitDate !== today) {
-            localStorage.removeItem("romanceFilms");
-            localStorage.removeItem("romanceGameOver");
-            localStorage.removeItem("romanceWin");
-            localStorage.setItem("romanceLastVisitDate", today);
+            localStorage.removeItem("womenFilms");
+            localStorage.removeItem("womenGameOver");
+            localStorage.removeItem("womenWin");
+            localStorage.setItem("womenLastVisitDate", today);
         }
     }, []);
 
     useEffect(() => {
-        const lastVisitDate = localStorage.getItem("romanceLastVisitDate");
-        const version = localStorage.getItem("romanceVersion");
+        const lastVisitDate = localStorage.getItem("womenLastVisitDate");
+        const version = localStorage.getItem("womenVersion");
         if (!lastVisitDate) {
             localStorage.setItem(
-                "romanceLastVisitDate",
+                "womenLastVisitDate",
                 new Date().toDateString()
             );
         }
         if (!version) {
-            localStorage.setItem("romanceVersion", "1.0");
+            localStorage.setItem("womenVersion", "1.0");
         }
     }, []);
 
@@ -81,7 +81,7 @@ export default function Romance() {
 
     useEffect(() => {
         const storedFilms = JSON.parse(
-            localStorage.getItem("romanceFilms") || "[]"
+            localStorage.getItem("womenFilms") || "[]"
         );
         setFilmsFromStorage(storedFilms);
     }, []);
@@ -91,39 +91,39 @@ export default function Romance() {
         saveToLocal(selectedFilm);
         setInputValue("");
         const storedFilms = JSON.parse(
-            localStorage.getItem("romanceFilms") || "[]"
+            localStorage.getItem("womenFilms") || "[]"
         );
-        const win = selectedFilm.Film_title === romanceMovie.Film_title;
+        const win = selectedFilm.Film_title === womenMovie.Film_title;
         if (storedFilms.length === 10) {
             if (win) {
-                localStorage.setItem("romanceWin", JSON.stringify(true));
+                localStorage.setItem("womenWin", JSON.stringify(true));
                 setWin(true);
-                localStorage.setItem("romanceGameOver", JSON.stringify(true));
+                localStorage.setItem("womenGameOver", JSON.stringify(true));
                 setGameOver(true);
                 showModal();
             } else {
-                localStorage.setItem("romanceWin", JSON.stringify(false));
+                localStorage.setItem("womenWin", JSON.stringify(false));
                 setWin(false);
-                localStorage.setItem("romanceGameOver", JSON.stringify(true));
+                localStorage.setItem("womenGameOver", JSON.stringify(true));
                 setGameOver(true);
                 showModal();
             }
         } else {
-            localStorage.setItem("romanceWin", JSON.stringify(win));
+            localStorage.setItem("womenWin", JSON.stringify(win));
             if (win) {
-                localStorage.setItem("romanceGameOver", JSON.stringify(true));
+                localStorage.setItem("womenGameOver", JSON.stringify(true));
                 setWin(win);
                 setGameOver(true);
                 showModal();
             } else {
-                localStorage.setItem("romanceGameOver", JSON.stringify(false));
+                localStorage.setItem("womenGameOver", JSON.stringify(false));
             }
         }
         selectFlag.current = true;
     };
 
     const resultCopy = () => {
-        let result = "Cinephidle Romance #" + daysSince + " 💕\n\n";
+        let result = "Cinephidle Women #" + daysSince + " 💕\n\n";
         const guesses = filmsFromStorage.length - 1;
         for (let i = 0; i < guesses; i++) {
             result = result + wrongEmoji;
@@ -133,7 +133,7 @@ export default function Romance() {
         } else {
             result = result + wrongEmoji;
         }
-        result = result + "\n\ncinephidle.vercel.app/romance";
+        result = result + "\n\ncinephidle.vercel.app/women";
         navigator.clipboard
             .writeText(result)
             .then(() => {
@@ -146,7 +146,7 @@ export default function Romance() {
 
     const saveToLocal = (selectedFilm) => {
         const storedFilms = JSON.parse(
-            localStorage.getItem("romanceFilms") || "[]"
+            localStorage.getItem("womenFilms") || "[]"
         );
         if (
             !storedFilms.some(
@@ -154,7 +154,7 @@ export default function Romance() {
             )
         ) {
             const updatedFilms = [selectedFilm, ...storedFilms];
-            localStorage.setItem("romanceFilms", JSON.stringify(updatedFilms));
+            localStorage.setItem("womenFilms", JSON.stringify(updatedFilms));
             setFilmsFromStorage(updatedFilms);
         } else {
             message.error("Film already guessed!");
@@ -168,7 +168,7 @@ export default function Romance() {
                     film.Film_title.toLowerCase() === inputValue.toLowerCase()
             );
             if (!film && !selectFlag.current) {
-                message.error("Film not in top 100 romance!");
+                message.error("Film not in top 100 directed by women!");
             }
             setInputValue("");
             selectFlag.current = false;
@@ -186,11 +186,11 @@ export default function Romance() {
                     left: "0",
                 }}
             >
-                <SideMenu page={"romance"} />
+                <SideMenu page={"women"} />
             </div>
             <div className="h-20 flex flex-col items-center justify-center">
                 <img
-                    src="/static/images/NameRomance.svg"
+                    src="/static/images/NameWomen.svg"
                     alt="name"
                     style={{ height: "300px"}}
                 ></img>
@@ -252,7 +252,7 @@ export default function Romance() {
                         Open Modal
                     </Button> */}
                     {filmsFromStorage.map((film) => (
-                        <GuessRomance key={film.Film_title} guess={film} />
+                        <GuessWomen key={film.Film_title} guess={film} />
                     ))}
                 </div>
                 <Modal
@@ -274,20 +274,20 @@ export default function Romance() {
                 >
                     <div className="text-2xl text-center text-primary-text font-semibold mt-5">
                         {win
-                            ? "Congratulations! You've guessed today's romance film!"
+                            ? "Congratulations! You've guessed today's directed by women film!"
                             : "Sorry, better luck next time!"}
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-10">
-                        Today's romance film is{" "}
+                        Today's directed by women film is{" "}
                         <span className="text-primary-partial">
-                            {romanceMovie.Film_title}!
+                            {womenMovie.Film_title}!
                         </span>
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-14">
-                        Next Cinephidle Romance round starts in
+                        Next Cinephidle Women round starts in
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold">
-                        <CountdownTimerRomance />
+                        <CountdownTimerWomen />
                     </div>
                 </Modal>
 
@@ -302,13 +302,13 @@ export default function Romance() {
                         How to play
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
-                        Cinephidle Romance is based on the top 100 most popular
-                        romance films on{" "}
+                        Cinephidle Women is based on the top 100 most popular
+                        films directed by women on{" "}
                         <span style={{ color: "#ff6188" }}>Letterboxd</span> as
-                        of 2022.
+                        of 2019.
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
-                        You get 10 tries to guess the correct romance film.
+                        You get 10 tries to guess the correct directed by women film.
                     </div>
                     <div className="text-lg text-center text-primary-text font-semibold mt-8 font-poppins">
                         Each guess reveals information about the the film you

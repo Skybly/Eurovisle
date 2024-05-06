@@ -1,0 +1,902 @@
+[
+    {
+        "Film_title": "13th",
+        "Release_year": 2016,
+        "Director": "Ava DuVernay",
+        "Cast": "Jelani Cobb",
+        "Average_rating": 4.3,
+        "Original_language": "English",
+        "Film_key": "13th"
+    },
+    {
+        "Film_title": "A Girl Walks Home Alone at Night",
+        "Release_year": 2014,
+        "Director": "Ana Lily Amirpour",
+        "Cast": "Sheila Vand",
+        "Average_rating": 3.8,
+        "Original_language": "Persian (Farsi)",
+        "Film_key": "A Girl Walks Home Alone at Night"
+    },
+    {
+        "Film_title": "A Wrinkle in Time",
+        "Release_year": 2018,
+        "Director": "Ava DuVernay",
+        "Cast": "Storm Reid",
+        "Average_rating": 2.1,
+        "Original_language": "English",
+        "Film_key": "A Wrinkle in Time"
+    },
+    {
+        "Film_title": "Across the Universe",
+        "Release_year": 2007,
+        "Director": "Julie Taymor",
+        "Cast": "Evan Rachel Wood",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "Across the Universe"
+    },
+    {
+        "Film_title": "American Honey",
+        "Release_year": 2016,
+        "Director": "Andrea Arnold",
+        "Cast": "Sasha Lane",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "American Honey"
+    },
+    {
+        "Film_title": "American Psycho",
+        "Release_year": 2000,
+        "Director": "Mary Harron",
+        "Cast": "Christian Bale",
+        "Average_rating": 3.9,
+        "Original_language": "English",
+        "Film_key": "American Psycho"
+    },
+    {
+        "Film_title": "An Education",
+        "Release_year": 2009,
+        "Director": "Lone Scherfig",
+        "Cast": "Carey Mulligan",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "An Education"
+    },
+    {
+        "Film_title": "Bao",
+        "Release_year": 2018,
+        "Director": "Domee Shi",
+        "Cast": "Daniel Kailin",
+        "Average_rating": 3.9,
+        "Original_language": "English",
+        "Film_key": "Bao"
+    },
+    {
+        "Film_title": "Battle of the Sexes",
+        "Release_year": 2017,
+        "Director": "Jonathan Dayton, Valerie Faris",
+        "Cast": "Emma Stone",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "Battle of the Sexes"
+    },
+    {
+        "Film_title": "Big",
+        "Release_year": 1988,
+        "Director": "Penny Marshall",
+        "Cast": "Tom Hanks",
+        "Average_rating": 3.6,
+        "Original_language": "English",
+        "Film_key": "Big"
+    },
+    {
+        "Film_title": "Bird Box",
+        "Release_year": 2018,
+        "Director": "Susanne Bier",
+        "Cast": "Sandra Bullock",
+        "Average_rating": 2.9,
+        "Original_language": "English",
+        "Film_key": "Bird Box"
+    },
+    {
+        "Film_title": "Blackfish",
+        "Release_year": 2013,
+        "Director": "Gabriela Cowperthwaite",
+        "Cast": "Dean Gomersall",
+        "Average_rating": 4.0,
+        "Original_language": "English",
+        "Film_key": "Blackfish"
+    },
+    {
+        "Film_title": "Blockers",
+        "Release_year": 2018,
+        "Director": "Kay Cannon",
+        "Cast": "Leslie Mann",
+        "Average_rating": 3.0,
+        "Original_language": "English",
+        "Film_key": "Blockers"
+    },
+    {
+        "Film_title": "Brave",
+        "Release_year": 2012,
+        "Director": "Brenda Chapman, Mark Andrews",
+        "Cast": "Kelly Macdonald",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "Brave"
+    },
+    {
+        "Film_title": "Bridget Jones's Diary",
+        "Release_year": 2001,
+        "Director": "Sharon Maguire",
+        "Cast": "Renée Zellweger",
+        "Average_rating": 3.4,
+        "Original_language": "English",
+        "Film_key": "Bridget Jones's Diary"
+    },
+    {
+        "Film_title": "Can You Ever Forgive Me?",
+        "Release_year": 2018,
+        "Director": "Marielle Heller",
+        "Cast": "Melissa McCarthy",
+        "Average_rating": 3.6,
+        "Original_language": "English",
+        "Film_key": "Can You Ever Forgive Me?"
+    },
+    {
+        "Film_title": "Carrie",
+        "Release_year": 2013,
+        "Director": "Kimberly Peirce",
+        "Cast": "Chloë Grace Moretz",
+        "Average_rating": 2.5,
+        "Original_language": "English",
+        "Film_key": "Carrie"
+    },
+    {
+        "Film_title": "Certain Women",
+        "Release_year": 2016,
+        "Director": "Kelly Reichardt",
+        "Cast": "Laura Dern",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "Certain Women"
+    },
+    {
+        "Film_title": "Citizenfour",
+        "Release_year": 2014,
+        "Director": "Laura Poitras",
+        "Cast": "Edward Snowden",
+        "Average_rating": 4.0,
+        "Original_language": "English",
+        "Film_key": "Citizenfour"
+    },
+    {
+        "Film_title": "City of God",
+        "Release_year": 2002,
+        "Director": "Fernando Meirelles",
+        "Cast": "Alexandre Rodrigues",
+        "Average_rating": 4.5,
+        "Original_language": "Portuguese",
+        "Film_key": "City of God"
+    },
+    {
+        "Film_title": "Cloud Atlas",
+        "Release_year": 2012,
+        "Director": "Tom Tykwer, Lilly Wachowski",
+        "Cast": "Tom Hanks",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "Cloud Atlas"
+    },
+    {
+        "Film_title": "Clueless",
+        "Release_year": 1995,
+        "Director": "Amy Heckerling",
+        "Cast": "Alicia Silverstone",
+        "Average_rating": 3.7,
+        "Original_language": "English",
+        "Film_key": "Clueless"
+    },
+    {
+        "Film_title": "Cléo from 5 to 7",
+        "Release_year": 1962,
+        "Director": "Agnès Varda",
+        "Cast": "Corinne Marchand",
+        "Average_rating": 4.2,
+        "Original_language": "French",
+        "Film_key": "Cléo from 5 to 7"
+    },
+    {
+        "Film_title": "Daisies",
+        "Release_year": 1966,
+        "Director": "Věra Chytilová",
+        "Cast": "Jitka Cerhová",
+        "Average_rating": 4.0,
+        "Original_language": "Czech",
+        "Film_key": "Daisies"
+    },
+    {
+        "Film_title": "Detroit",
+        "Release_year": 2017,
+        "Director": "Kathryn Bigelow",
+        "Cast": "John Boyega",
+        "Average_rating": 3.6,
+        "Original_language": "English",
+        "Film_key": "Detroit"
+    },
+    {
+        "Film_title": "Dumplin'",
+        "Release_year": 2018,
+        "Director": "Anne Fletcher",
+        "Cast": "Danielle Macdonald",
+        "Average_rating": 3.1,
+        "Original_language": "English",
+        "Film_key": "Dumplin'"
+    },
+    {
+        "Film_title": "Faces Places",
+        "Release_year": 2017,
+        "Director": "Agnès Varda, JR",
+        "Cast": "Agnès Varda",
+        "Average_rating": 4.1,
+        "Original_language": "French",
+        "Film_key": "Faces Places"
+    },
+    {
+        "Film_title": "Fast Times at Ridgemont High",
+        "Release_year": 1982,
+        "Director": "Amy Heckerling",
+        "Cast": "Sean Penn",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "Fast Times at Ridgemont High"
+    },
+    {
+        "Film_title": "Fifty Shades of Grey",
+        "Release_year": 2015,
+        "Director": "Sam Taylor-Johnson",
+        "Cast": "Dakota Johnson",
+        "Average_rating": 1.7,
+        "Original_language": "English",
+        "Film_key": "Fifty Shades of Grey"
+    },
+    {
+        "Film_title": "Fish Tank",
+        "Release_year": 2009,
+        "Director": "Andrea Arnold",
+        "Cast": "Katie Jarvis",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "Fish Tank"
+    },
+    {
+        "Film_title": "Frozen",
+        "Release_year": 2013,
+        "Director": "Chris Buck, Jennifer Lee",
+        "Cast": "Kristen Bell",
+        "Average_rating": 3.4,
+        "Original_language": "English",
+        "Film_key": "Frozen"
+    },
+    {
+        "Film_title": "Goodnight Mommy",
+        "Release_year": 2014,
+        "Director": "Severin Fiala, Veronika Franz",
+        "Cast": "Elias Schwarz",
+        "Average_rating": 3.4,
+        "Original_language": "German",
+        "Film_key": "Goodnight Mommy"
+    },
+    {
+        "Film_title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
+        "Release_year": 1975,
+        "Director": "Chantal Akerman",
+        "Cast": "Delphine Seyrig",
+        "Average_rating": 4.3,
+        "Original_language": "French",
+        "Film_key": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles"
+    },
+    {
+        "Film_title": "Jennifer's Body",
+        "Release_year": 2009,
+        "Director": "Karyn Kusama",
+        "Cast": "Megan Fox",
+        "Average_rating": 3.4,
+        "Original_language": "English",
+        "Film_key": "Jennifer's Body"
+    },
+    {
+        "Film_title": "Jupiter Ascending",
+        "Release_year": 2015,
+        "Director": "Lilly Wachowski, Lana Wachowski",
+        "Cast": "Channing Tatum",
+        "Average_rating": 2.0,
+        "Original_language": "English",
+        "Film_key": "Jupiter Ascending"
+    },
+    {
+        "Film_title": "Kung Fu Panda 2",
+        "Release_year": 2011,
+        "Director": "Jennifer Yuh Nelson",
+        "Cast": "Jack Black",
+        "Average_rating": 3.7,
+        "Original_language": "English",
+        "Film_key": "Kung Fu Panda 2"
+    },
+    {
+        "Film_title": "Kung Fu Panda 3",
+        "Release_year": 2016,
+        "Director": "Jennifer Yuh Nelson, Alessandro Carloni",
+        "Cast": "Jack Black",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "Kung Fu Panda 3"
+    },
+    {
+        "Film_title": "Lady Bird",
+        "Release_year": 2017,
+        "Director": "Greta Gerwig",
+        "Cast": "Saoirse Ronan",
+        "Average_rating": 3.9,
+        "Original_language": "English",
+        "Film_key": "Lady Bird"
+    },
+    {
+        "Film_title": "Leave No Trace",
+        "Release_year": 2018,
+        "Director": "Debra Granik",
+        "Cast": "Thomasin McKenzie",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "Leave No Trace"
+    },
+    {
+        "Film_title": "Little Miss Sunshine",
+        "Release_year": 2006,
+        "Director": "Jonathan Dayton, Valerie Faris",
+        "Cast": "Greg Kinnear",
+        "Average_rating": 4.2,
+        "Original_language": "English",
+        "Film_key": "Little Miss Sunshine"
+    },
+    {
+        "Film_title": "Lost in Translation",
+        "Release_year": 2003,
+        "Director": "Sofia Coppola",
+        "Cast": "Bill Murray",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "Lost in Translation"
+    },
+    {
+        "Film_title": "Loving Vincent",
+        "Release_year": 2017,
+        "Director": "DK Welchman, Hugh Welchman",
+        "Cast": "Douglas Booth",
+        "Average_rating": 4.0,
+        "Original_language": "English",
+        "Film_key": "Loving Vincent"
+    },
+    {
+        "Film_title": "Mamma Mia!",
+        "Release_year": 2008,
+        "Director": "Phyllida Lloyd",
+        "Cast": "Meryl Streep",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "Mamma Mia!"
+    },
+    {
+        "Film_title": "Marie Antoinette",
+        "Release_year": 2006,
+        "Director": "Sofia Coppola",
+        "Cast": "Kirsten Dunst",
+        "Average_rating": 3.7,
+        "Original_language": "English",
+        "Film_key": "Marie Antoinette"
+    },
+    {
+        "Film_title": "Mary Queen of Scots",
+        "Release_year": 2018,
+        "Director": "Josie Rourke",
+        "Cast": "Saoirse Ronan",
+        "Average_rating": 3.0,
+        "Original_language": "English",
+        "Film_key": "Mary Queen of Scots"
+    },
+    {
+        "Film_title": "Me Before You",
+        "Release_year": 2016,
+        "Director": "Thea Sharrock",
+        "Cast": "Emilia Clarke",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "Me Before You"
+    },
+    {
+        "Film_title": "Money Monster",
+        "Release_year": 2016,
+        "Director": "Jodie Foster",
+        "Cast": "George Clooney",
+        "Average_rating": 3.0,
+        "Original_language": "English",
+        "Film_key": "Money Monster"
+    },
+    {
+        "Film_title": "Monster",
+        "Release_year": 2003,
+        "Director": "Patty Jenkins",
+        "Cast": "Charlize Theron",
+        "Average_rating": 3.6,
+        "Original_language": "English",
+        "Film_key": "Monster"
+    },
+    {
+        "Film_title": "Mudbound",
+        "Release_year": 2017,
+        "Director": "Dee Rees",
+        "Cast": "Carey Mulligan",
+        "Average_rating": 3.7,
+        "Original_language": "English",
+        "Film_key": "Mudbound"
+    },
+    {
+        "Film_title": "Mustang",
+        "Release_year": 2015,
+        "Director": "Deniz Gamze Ergüven",
+        "Cast": "Güneş Nezihe Şensoy",
+        "Average_rating": 4.2,
+        "Original_language": "Turkish",
+        "Film_key": "Mustang"
+    },
+    {
+        "Film_title": "Obvious Child",
+        "Release_year": 2014,
+        "Director": "Gillian Robespierre",
+        "Cast": "Jenny Slate",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "Obvious Child"
+    },
+    {
+        "Film_title": "Palo Alto",
+        "Release_year": 2013,
+        "Director": "Gia Coppola",
+        "Cast": "Emma Roberts",
+        "Average_rating": 3.1,
+        "Original_language": "English",
+        "Film_key": "Palo Alto"
+    },
+    {
+        "Film_title": "Persepolis",
+        "Release_year": 2007,
+        "Director": "Vincent Paronnaud, Marjane Satrapi",
+        "Cast": "Chiara Mastroianni",
+        "Average_rating": 4.2,
+        "Original_language": "French",
+        "Film_key": "Persepolis"
+    },
+    {
+        "Film_title": "Pitch Perfect 2",
+        "Release_year": 2015,
+        "Director": "Elizabeth Banks",
+        "Cast": "Anna Kendrick",
+        "Average_rating": 2.9,
+        "Original_language": "English",
+        "Film_key": "Pitch Perfect 2"
+    },
+    {
+        "Film_title": "Pitch Perfect 3",
+        "Release_year": 2017,
+        "Director": "Trish Sie",
+        "Cast": "Anna Kendrick",
+        "Average_rating": 2.5,
+        "Original_language": "English",
+        "Film_key": "Pitch Perfect 3"
+    },
+    {
+        "Film_title": "Point Break",
+        "Release_year": 1991,
+        "Director": "Kathryn Bigelow",
+        "Cast": "Patrick Swayze",
+        "Average_rating": 3.7,
+        "Original_language": "English",
+        "Film_key": "Point Break"
+    },
+    {
+        "Film_title": "Private Life",
+        "Release_year": 2018,
+        "Director": "Tamara Jenkins",
+        "Cast": "Kathryn Hahn",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "Private Life"
+    },
+    {
+        "Film_title": "Raw",
+        "Release_year": 2016,
+        "Director": "Julia Ducournau",
+        "Cast": "Garance Marillier",
+        "Average_rating": 3.7,
+        "Original_language": "French",
+        "Film_key": "Raw"
+    },
+    {
+        "Film_title": "Revenge",
+        "Release_year": 2017,
+        "Director": "Coralie Fargeat",
+        "Cast": "Matilda Lutz",
+        "Average_rating": 3.5,
+        "Original_language": "French",
+        "Film_key": "Revenge"
+    },
+    {
+        "Film_title": "Ruby Sparks",
+        "Release_year": 2012,
+        "Director": "Jonathan Dayton, Valerie Faris",
+        "Cast": "Paul Dano",
+        "Average_rating": 3.6,
+        "Original_language": "English",
+        "Film_key": "Ruby Sparks"
+    },
+    {
+        "Film_title": "Seeking a Friend for the End of the World",
+        "Release_year": 2012,
+        "Director": "Lorene Scafaria",
+        "Cast": "Steve Carell",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "Seeking a Friend for the End of the World"
+    },
+    {
+        "Film_title": "Selma",
+        "Release_year": 2014,
+        "Director": "Ava DuVernay",
+        "Cast": "David Oyelowo",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "Selma"
+    },
+    {
+        "Film_title": "Set It Up",
+        "Release_year": 2018,
+        "Director": "Claire Scanlon",
+        "Cast": "Zoey Deutch",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "Set It Up"
+    },
+    {
+        "Film_title": "Shark Tale",
+        "Release_year": 2004,
+        "Director": "Vicky Jenson, Bibo Bergeron",
+        "Cast": "Will Smith",
+        "Average_rating": 2.8,
+        "Original_language": "English",
+        "Film_key": "Shark Tale"
+    },
+    {
+        "Film_title": "Shrek",
+        "Release_year": 2001,
+        "Director": "Andrew Adamson, Vicky Jenson",
+        "Cast": "Mike Myers",
+        "Average_rating": 4.1,
+        "Original_language": "English",
+        "Film_key": "Shrek"
+    },
+    {
+        "Film_title": "Sleepless in Seattle",
+        "Release_year": 1993,
+        "Director": "Nora Ephron",
+        "Cast": "Tom Hanks",
+        "Average_rating": 3.4,
+        "Original_language": "English",
+        "Film_key": "Sleepless in Seattle"
+    },
+    {
+        "Film_title": "Speed Racer",
+        "Release_year": 2008,
+        "Director": "Lilly Wachowski, Lana Wachowski",
+        "Cast": "Emile Hirsch",
+        "Average_rating": 3.4,
+        "Original_language": "English",
+        "Film_key": "Speed Racer"
+    },
+    {
+        "Film_title": "The Act of Killing",
+        "Release_year": 2012,
+        "Director": "Joshua Oppenheimer",
+        "Cast": "Anwar Congo",
+        "Average_rating": 4.4,
+        "Original_language": "Indonesian",
+        "Film_key": "The Act of Killing"
+    },
+    {
+        "Film_title": "The Babadook",
+        "Release_year": 2014,
+        "Director": "Jennifer Kent",
+        "Cast": "Essie Davis",
+        "Average_rating": 3.4,
+        "Original_language": "English",
+        "Film_key": "The Babadook"
+    },
+    {
+        "Film_title": "The Beguiled",
+        "Release_year": 2017,
+        "Director": "Sofia Coppola",
+        "Cast": "Colin Farrell",
+        "Average_rating": 3.4,
+        "Original_language": "English",
+        "Film_key": "The Beguiled"
+    },
+    {
+        "Film_title": "The Bling Ring",
+        "Release_year": 2013,
+        "Director": "Sofia Coppola",
+        "Cast": "Katie Chang",
+        "Average_rating": 2.9,
+        "Original_language": "English",
+        "Film_key": "The Bling Ring"
+    },
+    {
+        "Film_title": "The Diary of a Teenage Girl",
+        "Release_year": 2015,
+        "Director": "Marielle Heller",
+        "Cast": "Bel Powley",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "The Diary of a Teenage Girl"
+    },
+    {
+        "Film_title": "The Edge of Seventeen",
+        "Release_year": 2016,
+        "Director": "Kelly Fremon Craig",
+        "Cast": "Hailee Steinfeld",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "The Edge of Seventeen"
+    },
+    {
+        "Film_title": "The Holiday",
+        "Release_year": 2006,
+        "Director": "Nancy Meyers",
+        "Cast": "Cameron Diaz",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "The Holiday"
+    },
+    {
+        "Film_title": "The Hurt Locker",
+        "Release_year": 2008,
+        "Director": "Kathryn Bigelow",
+        "Cast": "Jeremy Renner",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "The Hurt Locker"
+    },
+    {
+        "Film_title": "The Intern",
+        "Release_year": 2015,
+        "Director": "Nancy Meyers",
+        "Cast": "Robert De Niro",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "The Intern"
+    },
+    {
+        "Film_title": "The Invitation",
+        "Release_year": 2015,
+        "Director": "Karyn Kusama",
+        "Cast": "Logan Marshall-Green",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "The Invitation"
+    },
+    {
+        "Film_title": "The Kids Are All Right",
+        "Release_year": 2010,
+        "Director": "Lisa Cholodenko",
+        "Cast": "Julianne Moore",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "The Kids Are All Right"
+    },
+    {
+        "Film_title": "The Love Witch",
+        "Release_year": 2016,
+        "Director": "Anna Biller",
+        "Cast": "Samantha Robinson",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "The Love Witch"
+    },
+    {
+        "Film_title": "The Matrix",
+        "Release_year": 1999,
+        "Director": "Lilly Wachowski, Lana Wachowski",
+        "Cast": "Keanu Reeves",
+        "Average_rating": 4.2,
+        "Original_language": "English",
+        "Film_key": "The Matrix"
+    },
+    {
+        "Film_title": "The Matrix Reloaded",
+        "Release_year": 2003,
+        "Director": "Lilly Wachowski, Lana Wachowski",
+        "Cast": "Keanu Reeves",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "The Matrix Reloaded"
+    },
+    {
+        "Film_title": "The Matrix Revolutions",
+        "Release_year": 2003,
+        "Director": "Lilly Wachowski, Lana Wachowski",
+        "Cast": "Keanu Reeves",
+        "Average_rating": 3.0,
+        "Original_language": "English",
+        "Film_key": "The Matrix Revolutions"
+    },
+    {
+        "Film_title": "The Miseducation of Cameron Post",
+        "Release_year": 2018,
+        "Director": "Desiree Akhavan",
+        "Cast": "Chloë Grace Moretz",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "The Miseducation of Cameron Post"
+    },
+    {
+        "Film_title": "The Parent Trap",
+        "Release_year": 1998,
+        "Director": "Nancy Meyers",
+        "Cast": "Lindsay Lohan",
+        "Average_rating": 3.7,
+        "Original_language": "English",
+        "Film_key": "The Parent Trap"
+    },
+    {
+        "Film_title": "The Piano",
+        "Release_year": 1993,
+        "Director": "Jane Campion",
+        "Cast": "Holly Hunter",
+        "Average_rating": 3.9,
+        "Original_language": "English",
+        "Film_key": "The Piano"
+    },
+    {
+        "Film_title": "The Prince of Egypt",
+        "Release_year": 1998,
+        "Director": "Simon Wells, Steve Hickner",
+        "Cast": "Val Kilmer",
+        "Average_rating": 4.0,
+        "Original_language": "English",
+        "Film_key": "The Prince of Egypt"
+    },
+    {
+        "Film_title": "The Proposal",
+        "Release_year": 2009,
+        "Director": "Anne Fletcher",
+        "Cast": "Sandra Bullock",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "The Proposal"
+    },
+    {
+        "Film_title": "The Rider",
+        "Release_year": 2017,
+        "Director": "Chloé Zhao",
+        "Cast": "Brady Jandreau",
+        "Average_rating": 4.0,
+        "Original_language": "English",
+        "Film_key": "The Rider"
+    },
+    {
+        "Film_title": "The Tale",
+        "Release_year": 2018,
+        "Director": "Jennifer Fox",
+        "Cast": "Laura Dern",
+        "Average_rating": 3.9,
+        "Original_language": "English",
+        "Film_key": "The Tale"
+    },
+    {
+        "Film_title": "The Virgin Suicides",
+        "Release_year": 1999,
+        "Director": "Sofia Coppola",
+        "Cast": "James Woods",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "The Virgin Suicides"
+    },
+    {
+        "Film_title": "To All the Boys I've Loved Before",
+        "Release_year": 2018,
+        "Director": "Susan Johnson",
+        "Cast": "Lana Condor",
+        "Average_rating": 3.0,
+        "Original_language": "English",
+        "Film_key": "To All the Boys I've Loved Before"
+    },
+    {
+        "Film_title": "Toni Erdmann",
+        "Release_year": 2016,
+        "Director": "Maren Ade",
+        "Cast": "Sandra Hüller",
+        "Average_rating": 4.0,
+        "Original_language": "German",
+        "Film_key": "Toni Erdmann"
+    },
+    {
+        "Film_title": "Twilight",
+        "Release_year": 2008,
+        "Director": "Catherine Hardwicke",
+        "Cast": "Kristen Stewart",
+        "Average_rating": 2.9,
+        "Original_language": "English",
+        "Film_key": "Twilight"
+    },
+    {
+        "Film_title": "Wayne's World",
+        "Release_year": 1992,
+        "Director": "Penelope Spheeris",
+        "Cast": "Mike Myers",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "Wayne's World"
+    },
+    {
+        "Film_title": "We Need to Talk About Kevin",
+        "Release_year": 2011,
+        "Director": "Lynne Ramsay",
+        "Cast": "Tilda Swinton",
+        "Average_rating": 3.8,
+        "Original_language": "English",
+        "Film_key": "We Need to Talk About Kevin"
+    },
+    {
+        "Film_title": "Winter's Bone",
+        "Release_year": 2010,
+        "Director": "Debra Granik",
+        "Cast": "Jennifer Lawrence",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "Winter's Bone"
+    },
+    {
+        "Film_title": "Wonder Woman",
+        "Release_year": 2017,
+        "Director": "Patty Jenkins",
+        "Cast": "Gal Gadot",
+        "Average_rating": 3.3,
+        "Original_language": "English",
+        "Film_key": "Wonder Woman"
+    },
+    {
+        "Film_title": "You Were Never Really Here",
+        "Release_year": 2017,
+        "Director": "Lynne Ramsay",
+        "Cast": "Joaquin Phoenix",
+        "Average_rating": 3.7,
+        "Original_language": "English",
+        "Film_key": "You Were Never Really Here"
+    },
+    {
+        "Film_title": "You've Got Mail",
+        "Release_year": 1998,
+        "Director": "Nora Ephron",
+        "Cast": "Tom Hanks",
+        "Average_rating": 3.5,
+        "Original_language": "English",
+        "Film_key": "You've Got Mail"
+    },
+    {
+        "Film_title": "Zero Dark Thirty",
+        "Release_year": 2012,
+        "Director": "Kathryn Bigelow",
+        "Cast": "Jessica Chastain",
+        "Average_rating": 3.7,
+        "Original_language": "English",
+        "Film_key": "Zero Dark Thirty"
+    }
+]
