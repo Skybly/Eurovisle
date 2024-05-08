@@ -30,7 +30,7 @@ Each day, a new film from the top 150 popular films on Letterboxd is picked as t
 * Horror mode, where you have to guess a movie out of the [top 100 most popular horror](https://letterboxd.com/believememaizey/list/100-most-popular-horror-movies-on-letterboxd/) films on Letterboxd.
 * Romance mode, where you have to guess a movie out of the [top 100 most popular romance](https://letterboxd.com/wordsandcolors/list/top-100-romance-films-on-letterboxd-as-of/) films on Letterboxd.
 * Science Fiction Mode, where you have to guess a movie out of the [top 150 most popular science fiction](https://letterboxd.com/chris_coke/list/letterboxds-top-250-science-fiction-films/) films on Letterboxd.
-* Women mode, where you have to guess a movie out of the [top 100 movies directed by women](https://letterboxd.com/wampeter57/list/100-most-popular-entries-on-letterboxd-directed/) on Letterboxd.
+* Directed by Women mode, where you have to guess a movie out of the [top 100 movies directed by women](https://letterboxd.com/wampeter57/list/100-most-popular-entries-on-letterboxd-directed/) on Letterboxd.
 
 <br>
 
