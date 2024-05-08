@@ -57,6 +57,7 @@ export const GameProvider = ({ children }) => {
             fetchHorrorMoveIndex();
             fetchRomanceMovieIndex();
             fetchWomenMovieIndex();
+            fetchScifiMovieIndex();
             setDaysSince(calculateDaysSince());
         };
 
