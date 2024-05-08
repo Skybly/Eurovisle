@@ -54,17 +54,25 @@ class SideMenu extends React.Component {
             },
         };
 
-        if (page === "horror") {
-            baseStyles.bmBurgerBars.background = "#bf1111";
-        }
-        if (page === "home") {
-            baseStyles.bmBurgerBars.background = "#ffffff";
-        }
-        if (page === "romance") {
-            baseStyles.bmBurgerBars.background = "#ff6188";
-        }
-        if (page === "women") {
-            baseStyles.bmBurgerBars.background = "#F6B9C8";
+        switch (page) {
+            case "horror":
+                baseStyles.bmBurgerBars.background = "#bf1111";
+                break;
+            case "home":
+                baseStyles.bmBurgerBars.background = "#ffffff";
+                break;
+            case "romance":
+                baseStyles.bmBurgerBars.background = "#ff6188";
+                break;
+            case "women":
+                baseStyles.bmBurgerBars.background = "#F6B9C8";
+                break;
+            case "scifi":
+                baseStyles.bmBurgerBars.background = "#00C2FF";
+                baseStyles.bmBurgerBars.boxShadow = "0 0 8px #00C2FF, 0 0 16px #00C2FF, 0 0 24px #00C2FF";
+                break;
+            default:
+                break;
         }
 
         return (
@@ -95,6 +103,15 @@ class SideMenu extends React.Component {
                     }
                 >
                     Romance
+                </a>
+                <a
+                    href="/scifi"
+                    style={{ width: "fit-content" }}
+                    className={
+                        page === "scifi" ? styles.activeItem : styles.item
+                    }
+                >
+                    Science Fiction
                 </a>
                 <a
                     href="/women"

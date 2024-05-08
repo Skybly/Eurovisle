@@ -3,6 +3,7 @@ import movies from "../data/150movies.json";
 import horrorMovies from "../data/horror.json";
 import romanceMovies from "../data/romance.json";
 import womenMovies from "../data/women.json";
+import scifiMovies from "../data/scifi.json";
 
 const GameContext = createContext();
 
@@ -11,6 +12,7 @@ export const GameProvider = ({ children }) => {
     const [horrorMovie, setHorrorMovie] = useState({});
     const [womenMovie, setWomenMovie] = useState({});
     const [romanceMovie, setRomanceMovie] = useState({});
+    const [scifiMovie, setScifiMovie] = useState({});
     const [daysSince, setDaysSince] = useState();
     const a = 48271;
     const c = 21;
@@ -43,6 +45,11 @@ export const GameProvider = ({ children }) => {
         const fetchWomenMovieIndex = () => {
             const index = getWomenIndex();
             setWomenMovie(womenMovies[index]);
+        };
+
+        const fetchScifiMovieIndex = () => {
+            const index = getScifiIndex();
+            setScifiMovie(scifiMovies[index]);
         };
 
         const updateDaily = () => {
@@ -94,6 +101,13 @@ export const GameProvider = ({ children }) => {
         return numericValue;
     };
 
+    const getScifiIndex = () => {
+        const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+        const m = 150;
+        let numericValue = (a * seed + c) % m;
+        return numericValue;
+    };
+
     const getMidnightTime = () => {
         const today = new Date();
         const midnight = new Date(today);
@@ -102,7 +116,7 @@ export const GameProvider = ({ children }) => {
     };
 
     return (
-        <GameContext.Provider value={{ movie, daysSince, horrorMovie, romanceMovie, womenMovie }}>
+        <GameContext.Provider value={{ movie, daysSince, horrorMovie, romanceMovie, womenMovie, scifiMovie }}>
             {children}
         </GameContext.Provider>
     );
