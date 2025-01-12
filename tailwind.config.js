@@ -9,6 +9,7 @@ module.exports = {
       poppins: ['Poppins'],
       montserrat: ['Montserrat'],
     },
+
     colors: {
       primary: {
         gray: '#757575',

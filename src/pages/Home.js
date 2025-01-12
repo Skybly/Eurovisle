@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import Guess from "../components/Guess";
 import { AutoComplete, message, ConfigProvider, Modal } from "antd";
-import films from "../data/150movies.json";
+import films from "../data/1000movies.json";
 import CountdownTimer from "../components/CountdownTimer";
 import GameContext from "../context/GameContext";
 import { QuestionCircleOutlined, CloseOutlined } from "@ant-design/icons";
@@ -13,6 +13,7 @@ export default function Home() {
     const { daysSince } = useContext(GameContext);
     const wrongEmoji = "⬜️";
     const correctEmoji = "🟩";
+    const maxGuesses = 10;
     const [inputValue, setInputValue] = useState("");
     const [filmsFromStorage, setFilmsFromStorage] = useState([]);
     const selectFlag = useRef(false);
@@ -89,7 +90,7 @@ export default function Home() {
         setInputValue("");
         const storedFilms = JSON.parse(localStorage.getItem("films") || "[]");
         const win = selectedFilm.Film_title === movie.Film_title;
-        if (storedFilms.length === 15) {
+        if (storedFilms.length === maxGuesses) {
             if (win) {
                 localStorage.setItem("win", JSON.stringify(true));
                 setWin(true);
@@ -175,11 +176,15 @@ export default function Home() {
                 <SideMenu page = {'home'}/>
             </div>
             <div className="h-20 flex flex-col items-center justify-center">
+                <h1 class="text-center text-4xl
+                           text-primary-text font-bold">Eurovisle</h1>
+                {/* 
                 <img
                     src="/static/images/Name.svg"
                     alt="name"
                     style={{ height: "300px" }}
                 ></img>
+                */}  
             </div>
             
             <ConfigProvider
@@ -216,7 +221,7 @@ export default function Home() {
                             />
                         </div>
                         <div className="text-primary-text brightness-50">
-                            {filmsFromStorage.length}/15
+                            {filmsFromStorage.length}/{maxGuesses}
                         </div>
                     </div>
                     <AutoComplete

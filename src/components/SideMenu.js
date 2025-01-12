@@ -55,21 +55,8 @@ class SideMenu extends React.Component {
         };
 
         switch (page) {
-            case "horror":
-                baseStyles.bmBurgerBars.background = "#bf1111";
-                break;
             case "home":
                 baseStyles.bmBurgerBars.background = "#ffffff";
-                break;
-            case "romance":
-                baseStyles.bmBurgerBars.background = "#ff6188";
-                break;
-            case "women":
-                baseStyles.bmBurgerBars.background = "#F6B9C8";
-                break;
-            case "scifi":
-                baseStyles.bmBurgerBars.background = "#00C2FF";
-                baseStyles.bmBurgerBars.boxShadow = "0 0 8px #00C2FF, 0 0 16px #00C2FF, 0 0 24px #00C2FF";
                 break;
             default:
                 break;
@@ -85,42 +72,6 @@ class SideMenu extends React.Component {
                     }
                 >
                     Classic
-                </a>
-                <a
-                    href="/horror"
-                    style={{ width: "fit-content" }}
-                    className={
-                        page === "horror" ? styles.activeItem : styles.item
-                    }
-                >
-                    Horror
-                </a>
-                <a
-                    href="/romance"
-                    style={{ width: "fit-content" }}
-                    className={
-                        page === "romance" ? styles.activeItem : styles.item
-                    }
-                >
-                    Romance
-                </a>
-                <a
-                    href="/scifi"
-                    style={{ width: "fit-content" }}
-                    className={
-                        page === "scifi" ? styles.activeItem : styles.item
-                    }
-                >
-                    Science Fiction
-                </a>
-                <a
-                    href="/women"
-                    style={{ width: "fit-content" }}
-                    className={
-                        page === "women" ? styles.activeItem : styles.item
-                    }
-                >
-                    By Women
                 </a>
             </Menu>
         );
